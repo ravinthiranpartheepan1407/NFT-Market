@@ -1,21 +1,16 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/Home.module.css'
+import CybornHeader from "../components/CybornHeader";
+import CybornSubscribe from "../components/CybornFooter";
+import CybornMain from "../components/CybornMain";
 
 export default function Home() {
   return (
-    <div className="bg-background flex items-center justify-center h-screen bg-gray-200">
-  <div className="container">
-    <div className="bg-black rounded-lg shadow-lg p-5 md:p-20 mx-72">
-      <div className="text-center">
-        <h2 className="text-5xl font-serif font-medium tracking-tight leading-10 text-gray-900 sm:text-5xl sm:leading-none md:text-6xl">
-          ARKHAMM
-        </h2>
-        <h3 className='text-xl font-serif md:text-3xl mt-10'>Coming Soon</h3>
-        <p className="text-md font-serif md:text-xl mt-10"><a className="hover:underline" href="https://www.arkhamm.com">Arkhamm</a> is a blockchain platform to help the students to learn and get a job in Web3 technology </p>
+      <div>
+        <CybornHeader />
+        <CybornMain />
+        <CybornSubscribe />
       </div>
-    </div>
-  </div>
-</div>
   )
 }
