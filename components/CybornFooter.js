@@ -160,7 +160,7 @@ function CybornFooter(){
 
   <div className="text-center p-6 bg-cybornheader">
     <span>© 2021 Copyright:</span>
-    <a className="text-white text-left" href="https://cybornnft.com">Cybornnft</a>
+    <a className="text-white text-left" href="https://cybornnft.com">Arkhamm</a>
   </div>
 </footer>
   )
