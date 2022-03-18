@@ -4,7 +4,7 @@ import styles from '../styles/Home.module.css'
 import CybornHeader from "../components/CybornHeader";
 import CybornSubscribe from "../components/CybornFooter";
 import CybornMain from "../components/CybornMain";
-
+import Arkhammtimeline from "../components/Arkhammtimeline";
 export default function Home() {
   return (
       <div>
@@ -19,6 +19,7 @@ export default function Home() {
 
         <CybornHeader />
         <CybornMain />
+        <Arkhammtimeline />    
         <CybornSubscribe />
       </div>
   )

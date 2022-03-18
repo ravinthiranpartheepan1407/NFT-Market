@@ -11,6 +11,7 @@ module.exports = {
         'cybornfootersocial': '#191d23',
         'cybornmain': '#202225',
         'arkhambutton': '#7bed2b',
+        'background': '#031926',
       }
     },
   },
