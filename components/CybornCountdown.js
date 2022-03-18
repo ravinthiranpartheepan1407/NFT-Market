@@ -53,7 +53,7 @@ class CybornCountdown extends Component {
     return (
       <div className="backgroundImg min-w-screen min-h-screen bg-gradient-to-r from-cybornheader to-bg-purple-900 flex items-center justify-center px-5 py-5" id="countdown">
     <div className="text-white">
-        <h1 className="text-3xl text-center mb-3 font-extralight">When will CybornNFT marketplace launch?*</h1>
+        <h1 className="text-3xl text-center mb-3 font-extralight">When will Arkhamm Web3 launch?*</h1>
         <br />
         <div className="text-6xl text-center flex w-full items-center justify-center">
             <div className="text-2xl mr-1 font-extralight">in</div>
@@ -77,7 +77,7 @@ class CybornCountdown extends Component {
         </div>
         <br />
         <br />
-          
+
     </div>
 
 </div>
