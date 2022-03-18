@@ -35,9 +35,11 @@ function CybornHeader(){
           <a href="#" className="text-base font-bold md:text-cybornheadertext block py-2 pr-4 pl-3 text-gray-700 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Jobs</a>
         </li>
         <li>
-
+        <button type="button" className="text-gray-900 text-gray-900 bg-gradient-to-r from-lime-200 via-lime-400 to-lime-500 font-medium rounded-lg text-sm px-2 py-2 mt-0 text-center inline-flex items-center">
+          <img width={18} height={18} src="/metamask.svg" /> &nbsp; Connect with MetaMask
+        </button>
         </li>
-    
+
       </ul>
     </div>
   </div>

@@ -10,6 +10,7 @@ module.exports = {
         'cybornheadertext': '#cbcccd',
         'cybornfootersocial': '#191d23',
         'cybornmain': '#202225',
+        'arkhambutton': '#7bed2b',
       }
     },
   },
