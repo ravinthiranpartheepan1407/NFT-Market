@@ -22,7 +22,7 @@ function CybornFooter(){
 
         </h6>
         <p>
-          Asia's first and largest web3 platform for De-Fi, De-Edu, DAO, Decentralized Job Finder, and non-fungible tokens (NFTs).
+          Asia&#39;s first and largest web3 platform for De-Fi, De-Edu, DAO, Decentralized Job Finder, and non-fungible tokens (NFTs).
         </p>
         <div className="flex justify-center items-center lg:justify-between p-6">
 
