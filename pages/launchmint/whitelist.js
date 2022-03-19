@@ -250,12 +250,12 @@ const addAddressToWhiteLists = async() =>{
          </div>
        );
      } else if(loading){
-       return(<div><button className="flex items-center shadow-glow py-4 px-10">Loading...</button></div>);
+       return(<div><button className="flex items-center shadow-glow py-2 px-10">Loading...</button></div>);
      } else{
-       return(<div><button className="flex items-center shadow-glow text-xl py-4 px-10" onClick={addAddressToWhiteLists}>Join Waitlist</button></div>);
+       return(<div><button className="flex items-center text-xl py-2 px-10" onClick={addAddressToWhiteLists}>Join Waitlist</button></div>);
      }
    } else{
-     return(<div><button className="flex items-center shadow-glow py-4 px-10" onClick={connectWallet}>Connect Your Wallet</button></div>);
+     return(<div><button className="flex items-center py-2 px-10" onClick={connectWallet}>Connect Your Wallet</button></div>);
    }
  };
 
