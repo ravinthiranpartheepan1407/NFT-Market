@@ -1,7 +1,10 @@
 import React, { Component } from "react";
 import {useEffect, useState} from "react";
+import { useRouter } from 'next/router';
+import Link from "next/link";
 
 class CybornCountdown extends Component {
+
   constructor(props) {
     super(props);
     this.count = this.count.bind(this);
@@ -15,6 +18,7 @@ class CybornCountdown extends Component {
     this.x = null;
     this.deadline = null;
   }
+
   count() {
     var now = new Date().getTime();
     var t = this.deadline - now;
@@ -41,6 +45,7 @@ class CybornCountdown extends Component {
       });
     }
   }
+
   componentDidMount() {
     this.deadline = new Date("Oct 08, 2022 21:00:00").getTime();
 
@@ -49,6 +54,7 @@ class CybornCountdown extends Component {
 
   render() {
     const { days, seconds, hours, minutes } = this.state;
+
 
     return (
       <div className="backgroundImg min-w-screen min-h-screen bg-gradient-to-r from-cybornheader to-bg-purple-900 flex items-center justify-center px-5 py-5" id="countdown">
@@ -77,7 +83,9 @@ class CybornCountdown extends Component {
         </div>
         <br />
         <br />
-        <button type="button" className="w-72 h-16 ml-20 text-gray-900 bg-gradient-to-r from-lime-200 via-lime-400 to-lime-500 shadow-lg shadow-lime-500/50 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2">Coming Soon</button>
+        <div className="w-72 h-16 ml-20 py-5 text-gray-900 bg-gradient-to-r from-lime-200 via-lime-400 to-lime-500 shadow-lg shadow-lime-500/50 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2">
+        <Link href="/launchmint/whitelist">Claim Your Pass</Link>
+        </div>
     </div>
 
 </div>
