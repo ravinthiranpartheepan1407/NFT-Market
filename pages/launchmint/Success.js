@@ -5,7 +5,7 @@ import Head from "next/head";
 import moment from "moment";
 import { TelegramShareButton, TelegramIcon } from "next-share";
 import { TwitterShareButton, TwitterIcon } from "next-share";
-import { tokenIdsMinted } from "./launchmint/Whitelist.js";
+import { tokenIdsMinted } from "/launchmint/Whitelist.js";
 import { ethers } from "ethers";
 import { IoCopyOutline } from "react-icons/io5";
 import { FaTelegramPlane, FaTwitter } from "react-icons/fa";
