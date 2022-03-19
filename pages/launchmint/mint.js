@@ -399,7 +399,11 @@ export default function Home() {
       draggable
       pauseOnHover/>
       <Head>
-        <title>Arkhamm - NFT</title>
+        <title>Arkhamm Web3</title>
+        <meta name="description" content="Arkhamm Blockchain" />
+        <link rel="apple-touch-icon" sizes="180x180" href="/ark.png" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/ark.png" />
+        <link rel="icon" type="image/png" sizes="16x16" href="/ark.png" />
       </Head>
       <div className="bg-background flex h-full flex-col md:flex-row">
         <div className="p-10 flex-1 flex flex-col justify-center md:p-20">

@@ -149,9 +149,13 @@ function Success() {
 
   return (
     <>
-      <Head>
-        <title>Arkhamm - NFT</title>
-      </Head>
+    <Head>
+      <title>Arkhamm Web3</title>
+      <meta name="description" content="Arkhamm Blockchain" />
+      <link rel="apple-touch-icon" sizes="180x180" href="/ark.png" />
+      <link rel="icon" type="image/png" sizes="32x32" href="/ark.png" />
+      <link rel="icon" type="image/png" sizes="16x16" href="/ark.png" />
+    </Head>
       <div className="bg-background min-h-screen h-full w-screen font-Ubuntu antialiased">
         <div className="min-h-screen h-full w-full md:flex">
           <div className="p-2 flex-1 md:pt-10 md:pl-12">
