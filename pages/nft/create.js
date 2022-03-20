@@ -137,12 +137,16 @@ function Create(){
         </div>
         <div className="flex-1 shrink-0">
           <div className="flex-1 shrink-0 h-full w-full object-cover md:h-full">
-          <br />
-          <br />
-          <br />
+      
+
           {
             fileUrl && (
+              <div>
               <img className="rounded mt-4" width="500" height="500" src={fileUrl} />
+              <video autoPlay loop className="rounded mt-4" width="500" height="500">
+                <source src={fileUrl} />
+              </video>
+              </div>
             )
           }
           </div>
