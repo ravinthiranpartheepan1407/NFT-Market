@@ -75,7 +75,7 @@ export default function Home() {
 
                 </div>
                 <div className="p-4 bg-cybornheader">
-                  <p className="mb-4 font-bold text-white">{nft.price} ETH</p>
+                  <p className="mb-4 font-bold text-white">{nft.price} Matic</p>
                   <button className="w-full bg-gradient-to-r from-lime-200 via-lime-400 to-lime-500 text-black font-bold py-2 px-12 rounded" onClick={() => buyNft(nft)}>Buy</button>
                 </div>
               </div>

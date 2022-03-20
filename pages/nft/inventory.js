@@ -60,7 +60,7 @@ export default function Inventory() {
               <div key={i} className="rounded-xl overflow-hidden">
                 <img src={nft.image} className="rounded" />
                 <div className="p-4 bg-gradient-to-r from-lime-200 via-lime-400 to-lime-500">
-                  <p className="text-xl  font-bold text-black">Price - {nft.price} Eth</p>
+                  <p className="text-xl  font-bold text-black">Price - {nft.price} Matic</p>
                 </div>
               </div>
             ))
@@ -78,7 +78,7 @@ export default function Inventory() {
                     <div key={i} className="border shadow rounded-xl overflow-hidden">
                       <img src={nft.image} className="rounded" />
                       <div className="p-4 bg-black">
-                        <p className="text-2xl font-bold text-white">Price - {nft.price} Eth</p>
+                        <p className="text-2xl font-bold text-white">Price - {nft.price} Matic</p>
                       </div>
                     </div>
                   ))
