@@ -2,7 +2,7 @@ import React from "react"
 import CybornHeader from "/components/CybornHeader"
 import CybornFooter from "/components/CybornFooter"
 import { useRouter } from "next/router";
-function market(){
+function Market(){
   const router = useRouter();
   return(
     <div>
@@ -45,4 +45,4 @@ function market(){
   )
 }
 
-export default market;
+export default Market;
