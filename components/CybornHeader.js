@@ -7,7 +7,66 @@ import { BiWalletAlt } from "react-icons/bi";
 import Web3Modal from "web3modal";
 
 function CybornHeader(){
+  const[walletConnected, setWalletConnected] = useState(false);
+  const [userAddress, setUserAddress] = useState("");
 
+  const web3ModalRef = useRef();
+
+  const getProviderOrSigner = async(needSigner = false) =>{
+    const provider = await web3ModalRef.current.connect();
+    const web3Provider = new providers.Web3Provider(provider);
+    const signer = web3Provider.getSigner();
+    const addr = await signer.getAddress();
+    setUserAddress(addr.toString());
+
+    const {chainId} = await web3Provider.getNetwork();
+    if(chainId !== 137){
+      window.alert("Change Network To Polygon Main Network");
+      throw new Error("Change Network to Polygon Main Network");
+    }
+
+    if(needSigner){
+      const signer = web3Provider.getSigner();
+      const addr = await signer.getAddress();
+      setUserAddress(addr.toString());
+      return signer;
+    }
+    return web3Provider;
+  };
+
+  const connectWallet = async() =>{
+    try{
+      await getProviderOrSigner();
+      setWalletConnected(true);
+    } catch(err){
+      console.log(err);
+    }
+  };
+
+  useEffect(() => {
+    if (!walletConnected) {
+      web3ModalRef.current = new Web3Modal({
+        network: "matic",
+        providerOptions: {},
+        disableInjectedProvider: false,
+      });
+      connectWallet();
+    }
+    }, [walletConnected]);
+
+    const renderButton = () => {
+      if (!walletConnected) {
+        return (
+          <button
+            onClick={connectWallet}
+            className="w-72 h-16 text-gray-900 bg-gradient-to-r from-lime-200 via-lime-400 to-lime-500 shadow-lg shadow-lime-500/50 font-medium rounded-lg text-sm px-5 py-2.5 text-center mb-2 flex items-center shadow-glow p-4"
+          >
+            <BiWalletAlt className="mr-2" />
+            Connect your wallet
+          </button>
+        );
+      }
+    }
 
   return(
     <nav className="border-gray-200 px-2 sm:px-4 py-2.5 bg-cybornheader">
@@ -46,9 +105,11 @@ function CybornHeader(){
           <Link href="#" className="text-base font-bold md:text-cybornheadertext block py-2 pr-4 pl-3 text-gray-700 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Jobs</Link>
         </li>
 
-      
         <li>
-        <button type="button" className="text-gray-900 text-gray-900 bg-gradient-to-r from-lime-200 via-lime-400 to-lime-500 font-medium rounded-lg text-sm px-2 py-2 mt-0 text-center inline-flex items-center">
+          Account: {userAddress}
+        </li>
+        <li>
+        <button type="button" onClick={connectWallet} className="text-gray-900 text-gray-900 bg-gradient-to-r from-lime-200 via-lime-400 to-lime-500 font-medium rounded-lg text-sm px-2 py-2 mt-0 text-center inline-flex items-center">
           <img width={18} height={18} src="/metamask.svg" /> &nbsp; Connect with MetaMask
         </button>
         </li>
