@@ -18,7 +18,7 @@ function Home(){
     <section className="relative bg-background">
       <img
         className="absolute inset-0 object-[75%] sm:object-[25%] object-cover w-full h-full"
-        src="/ICO.jpg"
+        src="/DAO.jpg"
       />
 
   <div className="hidden sm:block sm:inset-0 sm:absolute"></div>
@@ -26,14 +26,14 @@ function Home(){
   <div className="relative max-w-screen-xl px-4 py-32 mx-auto lg:h-screen lg:items-center lg:flex">
     <div className="max-w-xl text-center sm:text-left">
       <h1 className="text-3xl text-white font-extrabold sm:text-5xl">
-        <span className="bg-black text-3xl text-white font-extrabold sm:text-5xl"> Get Our ICO Tokens </span>
+        <span className="text-3xl text-white font-extrabold sm:text-5xl"> Our De-Fi Service</span>
         <strong className="font-extrabold text-white sm:block">
-          Want to get our coin offerings?
+          Want to use our De-Fi swapping service?
         </strong>
       </h1>
 
       <p className="max-w-lg mt-4 text-white sm:leading-relaxed sm:text-xl">
-        Get Our ICO and Gain access to our Web3 Resources
+        Use our De-Fi Service for token to matic or matic to our token
       </p>
 
       <div className="flex flex-wrap gap-4 mt-8 text-center">
