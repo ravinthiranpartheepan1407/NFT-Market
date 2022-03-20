@@ -595,7 +595,7 @@ export const ARKHAMM_CONTRACT_ABI = [
   }
 ];
 
-export const ARKHAMM_CONTRACT_ADDRESS = "0xa20883D62DbB43f4Ef3DEA944eB8079d9b8E9dC0";
+export const ARKHAMM_CONTRACT_ADDRESS = "0x4D610b3591E2b97d3114797A7B8885df0479Fa55";
 
 export const abi = [
   {
@@ -662,4 +662,4 @@ export const abi = [
     "type": "function"
   }
 ];
-export const WHITELISTED_CONTRACT = "0xF855EEB401B5632236B51b361b5a59b66D4C298D";
+export const WHITELISTED_CONTRACT = "0xa41fdd65Cea5E1d3781E0b52d6C510597147b146";

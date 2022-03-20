@@ -124,7 +124,7 @@ export default function Home() {
         signer
       );
       const tx = await whitelistContract.presaleMint({
-        value: utils.parseEther("0.3"),
+        value: utils.parseEther("0.1"),
       });
       setLoading(true);
       await tx.wait();
@@ -148,7 +148,7 @@ export default function Home() {
         signer
       );
       const tx = await whitelistContract.mint({
-        value: utils.parseEther("0.3"),
+        value: utils.parseEther("0.1"),
       });
       setLoading(true);
       await tx.wait();
@@ -270,9 +270,9 @@ export default function Home() {
     const web3Provider = new providers.Web3Provider(provider);
 
     const { chainId } = await web3Provider.getNetwork();
-    if (chainId !== 80001) {
-      window.alert("Change the network to Polygon Test Network");
-      throw new Error("Change network to Polygon Test Network");
+    if (chainId !== 137) {
+      window.alert("Change the network to Polygon Main Network");
+      throw new Error("Change network to Polygon Main Network");
     }
 
     if (needSigner) {

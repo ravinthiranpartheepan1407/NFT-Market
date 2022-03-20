@@ -165,9 +165,9 @@ export default function Home() {
     const web3Provider = new providers.Web3Provider(provider);
 
     const {chainId} = await web3Provider.getNetwork();
-    if(chainId !== 80001){
-      window.alert("Change Network To Matic Test Net");
-      throw new Error("Change Network to Matic Test Net");
+    if(chainId !== 137){
+      window.alert("Change Network To Matic Main Net");
+      throw new Error("Change Network to Matic Main Net");
     }
 
     if(needSigner){
