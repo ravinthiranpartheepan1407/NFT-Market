@@ -73,7 +73,7 @@ function Create(){
 
     transaction = await contract.createMarketItem(ARKHAMM_NFT_ADDRESS, tokenId, price, { value: listingPrice })
     await transaction.wait()
-    router.push('/')
+    router.push('/nft/home')
   }
   return(
     <div>
