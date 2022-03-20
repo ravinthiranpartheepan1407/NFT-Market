@@ -51,6 +51,13 @@ export default function Inventory() {
   if (loadingState === 'loaded' && !nfts.length) return (<div className="bg-background "><MarketHeader /><br /><br /><br /><br /><p className="text-white text-center text-6xl">No NFTs Created By You</p><br /><br /><br /><br /><CybornFooter /></div>)
   return (
     <div>
+    <Head>
+      <title>Arkhamm Web3</title>
+      <meta name="description" content="Arkhamm Blockchain" />
+      <link rel="apple-touch-icon" sizes="180x180" href="/ark.png" />
+      <link rel="icon" type="image/png" sizes="32x32" href="/ark.png" />
+      <link rel="icon" type="image/png" sizes="16x16" href="/ark.png" />
+    </Head>
     <MarketHeader />
       <div className="p-4 bg-background">
         <h2 className="text-6xl text-white py-2">Items Created</h2>

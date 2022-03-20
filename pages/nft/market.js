@@ -6,6 +6,13 @@ function Market(){
   const router = useRouter();
   return(
     <div>
+    <Head>
+      <title>Arkhamm Web3</title>
+      <meta name="description" content="Arkhamm Blockchain" />
+      <link rel="apple-touch-icon" sizes="180x180" href="/ark.png" />
+      <link rel="icon" type="image/png" sizes="32x32" href="/ark.png" />
+      <link rel="icon" type="image/png" sizes="16x16" href="/ark.png" />
+    </Head>
     <CybornHeader />
     <section className="relative bg-background">
   <img

@@ -3,6 +3,7 @@ import { useEffect, useState } from "react"
 import axios from 'axios'
 import Web3Modal from "web3modal"
 import Link from 'next/link'
+import Head from "next/head";
 import Image from 'next/image'
 import MarketHeader from "/components/MarketHeader"
 import CybornFooter from "/components/CybornFooter"
@@ -46,9 +47,22 @@ export default function Account() {
     setNfts(items)
     setLoadingState('loaded')
   }
-  if (loadingState === 'loaded' && !nfts.length) return (<div className="bg-background "><MarketHeader /><br /><br /><br /><br /><p className="text-white text-center text-6xl">No NFTs Owned By You</p><br /><br /><br /><br /><CybornFooter /></div>)
+  if (loadingState === 'loaded' && !nfts.length) return (<div className="bg-background "><Head>
+    <title>Arkhamm Web3</title>
+    <meta name="description" content="Arkhamm Blockchain" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/ark.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/ark.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/ark.png" />
+  </Head><MarketHeader /><br /><br /><br /><br /><p className="text-white text-center text-6xl">No NFTs Owned By You</p><br /><br /><br /><br /><CybornFooter /></div>)
   return (
     <div>
+    <Head>
+      <title>Arkhamm Web3</title>
+      <meta name="description" content="Arkhamm Blockchain" />
+      <link rel="apple-touch-icon" sizes="180x180" href="/ark.png" />
+      <link rel="icon" type="image/png" sizes="32x32" href="/ark.png" />
+      <link rel="icon" type="image/png" sizes="16x16" href="/ark.png" />
+    </Head>
     <MarketHeader />
     <div className="flex justify-center bg-background">
       <div className="p-4">
