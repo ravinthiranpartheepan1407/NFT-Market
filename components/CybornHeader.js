@@ -87,7 +87,7 @@ function CybornHeader(){
           <Link href="#" className="text-base font-bold block py-2 pr-4 pl-3 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 md:text-cybornheadertext md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">De-Fi</Link>
         </li>
         <li>
-          <Link href="#" className="text-base font-bold block py-2 pr-4 pl-3 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 md:text-cybornheadertext md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-cybornheadertext md:dark:hover:bg-transparent dark:border-gray-700">NFT Marketplace</Link>
+          <Link href="/nft/market" className="text-base font-bold block py-2 pr-4 pl-3 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 md:text-cybornheadertext md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-cybornheadertext md:dark:hover:bg-transparent dark:border-gray-700">NFT Marketplace</Link>
         </li>
         <li>
           <Link href="/launchmint/whitelist" className="text-base font-bold md:text-cybornheadertext block py-2 pr-4 pl-3 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Minting</Link>
