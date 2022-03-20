@@ -92,7 +92,7 @@ function Success() {
 
   const TextCopys = (props) => {
     const [copieds, copys] = useCopyToClipboard(
-      "0x4D610b3591E2b97d3114797A7B8885df0479Fa55"
+      "0x822670eD5157ECCd5b32324ecd5FE351619636c0"
     );
     return (
       <>
@@ -178,7 +178,7 @@ function Success() {
                 <div className="">
                   <TelegramShareButton
                     url={
-                      "https://testnets.opensea.io/collection/arkhamm-tokens"
+                      "https://opensea.io/collection/arkhamm-tokens"
                     }
                     title={"I just became a @Arkhamm DAO Member 💚"}
                   >
@@ -193,7 +193,7 @@ function Success() {
                 <div className="">
                   <TwitterShareButton
                     url={
-                      "https://testnets.opensea.io/collection/arkhamm-tokens"
+                      "https://opensea.io/collection/arkhamm-tokens"
                     }
                     title={"I just became a Arkhamm DAO Member 💚"}
                   >
@@ -214,7 +214,7 @@ function Success() {
             <div className="pt-5 hidden sm:flex">
               <Link
                 passHref
-                href="https://testnets.opensea.io/collection/arkhamm-tokens"
+                href="https://opensea.io/collection/arkhamm-tokens"
               >
                 <div className=" transition-all">
                   <img
@@ -233,7 +233,7 @@ function Success() {
             <div className="flex sm:hidden">
               <Link
                 passHref
-                href="https://testnets.opensea.io/collection/arkhamm-tokens"
+                href="https://opensea.io/collection/arkhamm-tokens"
               >
                 <div className="flex text-white items-center bg-opensea w-full">
                   <img
