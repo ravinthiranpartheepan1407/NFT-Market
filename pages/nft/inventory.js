@@ -74,8 +74,12 @@ export default function Inventory() {
             nfts.map((nft, i) => (
               <div key={i} className="rounded-xl overflow-hidden">
                 <img src={nft.image} className="rounded" />
+                <div className="p-4 bg-black">
+                  <p style={{ height: '40px' }} className="text-2xl text-white font-semibold">{nft.name}</p>
+                  <p style={{ height: '40px' }} className="text-white font-light">{nft.description}</p>
+                </div>
                 <div className="p-4 bg-gradient-to-r from-lime-200 via-lime-400 to-lime-500">
-                  <p className="text-xl  font-bold text-black">Price - {nft.price} Matic</p>
+                  <p className="text-xl font-light text-black">Price - {nft.price} Matic</p>
                 </div>
               </div>
             ))
