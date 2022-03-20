@@ -9,7 +9,7 @@ import CybornFooter from "/components/CybornFooter"
 
 import { ARKHAMM_NFT_ADDRESS, ARKHAMM_NFT_MARKET_CONTRACT_ADDRESS, ARKHAMM_NFT_MARKET_CONTRACT_ABI, ARKHAMM_NFT_ABI} from '/constants'
 
-export default function inventory() {
+export default function Inventory() {
   const [nfts, setNfts] = useState([])
   const [sold, setSold] = useState([])
   const [loadingState, setLoadingState] = useState('not-loaded')

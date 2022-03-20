@@ -12,7 +12,7 @@ import { ARKHAMM_NFT_ADDRESS, ARKHAMM_NFT_MARKET_CONTRACT_ADDRESS, ARKHAMM_NFT_M
 
 
 
-export default function home() {
+export default function Home() {
   const router = useRouter();
   const [nfts, setNfts] = useState([])
   const [loadingState, setLoadingState] = useState('not-loaded')

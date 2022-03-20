@@ -18,7 +18,7 @@ import { ARKHAMM_NFT_ADDRESS, ARKHAMM_NFT_MARKET_CONTRACT_ADDRESS, ARKHAMM_NFT_M
 
 
 
-function create(){
+function Create(){
   const [fileUrl, setFileUrl] = useState(null)
   const [formInput, updateFormInput] = useState({ price: '', name: '', description: '' })
   const router = useRouter()
@@ -154,4 +154,4 @@ function create(){
   )
 }
 
-export default create;
+export default Create;

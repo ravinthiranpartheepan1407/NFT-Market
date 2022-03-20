@@ -11,7 +11,7 @@ import { ARKHAMM_NFT_ADDRESS, ARKHAMM_NFT_MARKET_CONTRACT_ADDRESS, ARKHAMM_NFT_M
 
 
 
-export default function account() {
+export default function Account() {
   const [nfts, setNfts] = useState([])
   const [loadingState, setLoadingState] = useState('not-loaded')
   useEffect(() => {
