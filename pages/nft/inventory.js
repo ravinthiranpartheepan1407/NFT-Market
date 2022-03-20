@@ -6,6 +6,8 @@ import Link from 'next/link'
 import Image from 'next/image'
 import MarketHeader from "/components/MarketHeader"
 import CybornFooter from "/components/CybornFooter"
+import Head from "next/head";
+
 
 import { ARKHAMM_NFT_ADDRESS, ARKHAMM_NFT_MARKET_CONTRACT_ADDRESS, ARKHAMM_NFT_MARKET_CONTRACT_ABI, ARKHAMM_NFT_ABI} from '/constants'
 

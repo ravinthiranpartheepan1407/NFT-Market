@@ -7,6 +7,7 @@ import { useRouter } from "next/router";
 import Image from 'next/image'
 import MarketHeader from "/components/MarketHeader"
 import CybornFooter from "/components/CybornFooter"
+import Head from "next/head";
 
 import { ARKHAMM_NFT_ADDRESS, ARKHAMM_NFT_MARKET_CONTRACT_ADDRESS, ARKHAMM_NFT_MARKET_CONTRACT_ABI, ARKHAMM_NFT_ABI} from '/constants'
 
@@ -70,7 +71,7 @@ export default function Home() {
     </Head>
     <MarketHeader />
     <div className="flex justify-center">
-      <div className="px-4" style={{ maxWidth: '1000px' }}>
+      <div className="px-4" style={{ maxWidth: '1200px' }}>
         <div id="items" className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 pt-4">
           {
             nfts.map((nft, i) => (
