@@ -75,8 +75,9 @@ export default function Inventory() {
               <div key={i} className="rounded-xl overflow-hidden">
                 <img src={nft.image} className="rounded" />
                 <div className="p-4 bg-black">
-                  <p style={{ height: '40px' }} className="text-2xl text-white font-semibold">{nft.name}</p>
-                  <p style={{ height: '40px' }} className="text-white font-light">{nft.description}</p>
+                  <p style={{ height: '40px' }} className="text-2xl text-white font-semibold">{nft.seller}</p>
+                  <p style={{ height: '40px' }} className="text-white font-light">{nft.owner}</p>
+                  <p style={{ height: '40px' }} className="text-white font-light">{nft.sold}</p>
                 </div>
                 <div className="p-4 bg-gradient-to-r from-lime-200 via-lime-400 to-lime-500">
                   <p className="text-xl font-light text-black">Price - {nft.price} Matic</p>
@@ -97,7 +98,12 @@ export default function Inventory() {
                     <div key={i} className="border shadow rounded-xl overflow-hidden">
                       <img src={nft.image} className="rounded" />
                       <div className="p-4 bg-black">
-                        <p className="text-2xl font-bold text-white">Price - {nft.price} Matic</p>
+                        <p style={{ height: '40px' }} className="text-2xl text-white font-semibold">{nft.seller}</p>
+                        <p style={{ height: '40px' }} className="text-white font-light">{nft.owner}</p>
+                        <p style={{ height: '40px' }} className="text-white font-light">{nft.sold}</p>
+                      </div>
+                      <div className="p-4 bg-black">
+                        <p className="text-2xl font-light text-white">Price - {nft.price} Matic</p>
                       </div>
                     </div>
                   ))
