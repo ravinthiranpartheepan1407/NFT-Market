@@ -138,7 +138,7 @@ function Success() {
 
   async function disconnect() {
     const web3Modal = new Web3Modal({
-      network: "mumbai", // optional
+      network: "matic", // optional
       cacheProvider: true, // optional
       providerOptions: {},
     });

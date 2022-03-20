@@ -262,7 +262,7 @@ const addAddressToWhiteLists = async() =>{
  useEffect(()=>{
    if(!walletConnected){
      web3ModalRef.current = new web3Modal({
-       network: "mumbai",
+       network: "matic",
        providerOptions: {},
        disableInjectedProvider: false,
      });
