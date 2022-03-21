@@ -207,6 +207,7 @@ export default function Home() {
       <p className="ml-8 max-w-lg mt-4 text-white sm:leading-relaxed sm:text-xl">
         Get Our ICO and Gain access to our Web3 Resources
       </p>
+      <br />
 
       <div>
       {walletConnected ? (
@@ -214,9 +215,9 @@ export default function Home() {
           {renderButton()}
         </div>
         ):(
-            <div className="flex items-center justify-center">
-            <br />
-            <button className="block w-full py-5 text-sm font-medium text-black rounded shadow bg-gradient-to-r from-lime-200 via-lime-400 to-lime-500 sm:w-auto active:bg-lime-100 hover:bg-lime-300 focus:outline-none focus:ring" onClick={connectWallet}> Connect Your Wallet </button>
+            <div className="flex">
+
+            <button className="block w-full py-4 ml-8 px-4 text-sm font-medium text-black rounded shadow bg-gradient-to-r from-lime-200 via-lime-400 to-lime-500 sm:w-auto active:bg-lime-100 hover:bg-lime-300 focus:outline-none focus:ring" onClick={connectWallet}> Connect Your Wallet </button>
 
             </div>
           )}
