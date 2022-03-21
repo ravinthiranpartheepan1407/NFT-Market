@@ -216,7 +216,7 @@ export default function Home() {
         ):(
             <div className="flex items-center justify-center">
             <br />
-            <button className="block text-white text-xl p-8 max-w-sm rounded-lg border border-gray-200 shadow-md hover:bg-gray-100 bg-rose-900 dark:border-gray-700 dark:hover:bg-gray-700" onClick={connectWallet}> Connect Your Wallet </button>
+            <button className="block w-full py-5 text-sm font-medium text-black rounded shadow bg-gradient-to-r from-lime-200 via-lime-400 to-lime-500 sm:w-auto active:bg-lime-100 hover:bg-lime-300 focus:outline-none focus:ring" onClick={connectWallet}> Connect Your Wallet </button>
 
             </div>
           )}
