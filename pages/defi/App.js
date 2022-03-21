@@ -5,18 +5,18 @@ import Web3Modal from "web3modal";
 import CybornHeader from "/components/CybornHeader"
 import CybornFooter from "/components/CybornFooter"
 import styles from "/styles/Home.module.css";
-import { addLiquidity, calculateAKI } from "./addLiquidity";
+import { addLiquidity, calculateAKI } from "/components/addLiquidity";
 import {
   getAKITokensBalance,
   getEtherBalance,
   getLPTokensBalance,
   getReserveOfAKITokens,
-} from "./getAmounts";
+} from "/components/getAmounts";
 import {
   getTokensAfterRemove,
   removeLiquidity,
-} from "./removeLiquidity";
-import { swapTokens, getAmountOfTokensReceivedFromSwap } from "./swap";
+} from "/components/removeLiquidity";
+import { swapTokens, getAmountOfTokensReceivedFromSwap } from "/components/swap";
 
 export default function App() {
   const [loading, setLoading] = useState(false);
