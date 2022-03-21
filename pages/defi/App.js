@@ -5,7 +5,7 @@ import Web3Modal from "web3modal";
 import CybornHeader from "/components/CybornHeader"
 import CybornFooter from "/components/CybornFooter"
 import styles from "/styles/Home.module.css";
-import { addLiquidity, calculateCD } from "./addLiquidity";
+import { addLiquidity, calculateAKI } from "./addLiquidity";
 import {
   getAKITokensBalance,
   getEtherBalance,
@@ -273,7 +273,7 @@ export default function App() {
                   onChange={async (e) => {
                     setAddEther(e.target.value || "0");
 
-                    const _addAKITokens = await calculateCD(
+                    const _addAKITokens = await calculateAKI(
                       e.target.value || "0",
                       etherBalanceContract,
                       reservedAKI
