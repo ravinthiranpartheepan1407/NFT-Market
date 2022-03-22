@@ -11,7 +11,7 @@ function CybornFooter(){
           About Arkhamm
         </h1>
         <p>
-          Asia&#39;s first and largest web3 platform for De-Fi, De-Edu, DAO, Decentralized Job Finder, and non-fungible tokens (NFTs).
+          Asia&#39;s first and largest web3 platform for De-Fi, ICO, NFT Minting Engine, DAO, Decentralized Job Finder, DEX, Yield Agrregator and Non-Fungible Tokens (NFTs) Market.
         </p>
         <div className="flex justify-center items-center lg:justify-between p-6">
 
