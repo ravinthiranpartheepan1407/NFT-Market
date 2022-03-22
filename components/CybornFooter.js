@@ -1,5 +1,5 @@
 import React from "react";
-
+import Link from "next/link";
 function CybornFooter(){
   return(
     <footer className="bg-cybornheader text-center lg:text-left text-white">
@@ -16,9 +16,11 @@ function CybornFooter(){
             justify-center
             md:justify-start
           ">
-          <a href="#" className="flex">
-            <img width={128} height={128} className="rounded" src ="/ark.png" />
-          </a>
+          <Link href='/'>
+            <a className='inline-flex items-center p-2 mr-4 '>
+             <img src="/ark.png" width={100} height={100} className="rounded" />
+            </a>
+          </Link>
 
         </h6>
         <p>
