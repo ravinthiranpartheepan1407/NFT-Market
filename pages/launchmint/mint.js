@@ -11,7 +11,8 @@ import moment from "moment";
 import { BiWalletAlt } from "react-icons/bi";
 import {  toast } from 'react-toastify';
 import { ToastContainer } from 'react-toastify';
-
+import CybornHeader from "/components/CybornHeader";
+import CybornSubscribe from "/components/CybornFooter";
 
 
 export default function Home() {
@@ -389,6 +390,7 @@ export default function Home() {
 
   return (
     <div className="h-screen font-Ubuntu w-screen antialiased">
+    <CybornHeader />
           <ToastContainer position="top-left"
       autoClose={1000}
       hideProgressBar={false}
@@ -439,6 +441,7 @@ export default function Home() {
         </div>
       </div>
       </div>
+      <CybornSubscribe />
     </div>
   );
 }

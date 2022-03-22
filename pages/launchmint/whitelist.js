@@ -8,7 +8,8 @@ import {WHITELISTED_CONTRACT, abi} from "/constants";
 import {  toast } from 'react-toastify';
 import { ToastContainer } from 'react-toastify';
 import moment from 'moment';
-
+import CybornHeader from "/components/CybornHeader";
+import CybornSubscribe from "/components/CybornFooter";
 
 export default function Home() {
 
@@ -272,6 +273,7 @@ const addAddressToWhiteLists = async() =>{
 
   return (
     <div className=" h-full w-screen antialiased">
+    <CybornHeader />
     <Head>
       <title>Arkhamm Web3</title>
       <meta name="description" content="Arkhamm Blockchain" />
@@ -303,6 +305,7 @@ const addAddressToWhiteLists = async() =>{
         </div>
       </div>
       </div>
+      <CybornSubscribe />
     </div>
   );
 }

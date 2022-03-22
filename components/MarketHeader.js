@@ -6,7 +6,15 @@ import {useEffect, useRef, useState} from "react";
 import { BiWalletAlt } from "react-icons/bi";
 import Web3Modal from "web3modal";
 
-function MarketHeader(){
+
+
+function CybornHeader(){
+    const [active, setActive] = useState(false);
+
+    const handleClick = () => {
+      setActive(!active);
+    };
+
   const[walletConnected, setWalletConnected] = useState(false);
   const [userAddress, setUserAddress] = useState("");
 
@@ -69,43 +77,69 @@ function MarketHeader(){
     }
 
   return(
-    <nav className="border-gray-200 px-2 sm:px-4 py-2.5 bg-cybornheader">
-  <div className="container flex flex-wrap justify-between items-center mx-auto">
-    <Link href="/" className="flex">
-      <img width={100} height={100} className="rounded" src ="/ark.png" />
-    </Link>
-    <button data-collapse-toggle="mobile-menu" type="button" className="inline-flex items-center p-2 ml-3 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="mobile-menu-2" aria-expanded="false">
-      <span className="sr-only">Open main menu</span>
-    </button>
-    <div className="hidden w-full md:block md:w-auto" id="mobile-menu">
-
-      <ul className="flex flex-col mt-4 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium text-base font-bold md:text-cybornheadertext block py-2 pr-4 pl-3 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">
-        <li>
-          <Link href="/nft/market" className="text-base font-bold block py-2 pr-4 pl-3 text-white bg-blue-700 rounded md:bg-transparent md:text-cybornheadertext md:p-0" aria-current="page">Market</Link>
-        </li>
-        <li>
-          <Link href="/nft/home" className="text-base font-bold block py-2 pr-4 pl-3 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 md:text-cybornheadertext md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Home</Link>
-        </li>
-        <li>
-          <Link href="/nft/inventory" className="text-base font-bold block py-2 pr-4 pl-3 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 md:text-cybornheadertext md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-cybornheadertext md:dark:hover:bg-transparent dark:border-gray-700">Inventory</Link>
-        </li>
-        <li>
-          <Link href="/nft/account" className="text-base font-bold md:text-cybornheadertext block py-2 pr-4 pl-3 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Profile</Link>
-        </li>
-        <li>
-          Account: {userAddress}
-        </li>
-        <li>
-        <button type="button" onClick={connectWallet} className="text-gray-900 text-gray-900 bg-gradient-to-r from-lime-200 via-lime-400 to-lime-500 font-medium rounded-lg text-sm px-2 py-2 mt-0 text-center inline-flex items-center">
-          <img width={18} height={18} src="/metamask.svg" /> &nbsp; Connect with MetaMask
-        </button>
-        </li>
-
-      </ul>
-    </div>
-  </div>
-</nav>
+    <nav className='flex items-center flex-wrap bg-cybornheader p-1 '>
+       <Link href='/'>
+         <a className='inline-flex items-center p-2 mr-4 '>
+          <img src="/ark.png" width={100} height={100} className="rounded" />
+         </a>
+       </Link>
+       <button
+         className=' inline-flex p-2 hover:bg-green-600 rounded lg:hidden text-white ml-auto hover:text-white outline-none'
+         onClick={handleClick}
+       >
+         <svg
+           className='w-6 h-6'
+           fill='none'
+           stroke='currentColor'
+           viewBox='0 0 24 24'
+           xmlns='http://www.w3.org/2000/svg'
+         >
+           <path
+             strokeLinecap='round'
+             strokeLinejoin='round'
+             strokeWidth={2}
+             d='M4 6h16M4 12h16M4 18h16'
+           />
+         </svg>
+       </button>
+       <div
+         className={`${
+           active ? '' : 'hidden'
+         }   w-full lg:inline-flex lg:flex-grow lg:w-auto`}
+       >
+         <div className="lg:text-sm lg:inline-flex md:space-x-4 md:mt-0 md:text-sm lg:flex-row lg:ml-auto lg:w-auto w-full lg:items-center items-start flex flex-col lg:h-auto">
+           <Link href="/nft/market">
+             <a className="lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-white items-center justify-center hover:bg-background hover:text-white ">
+               Market
+             </a>
+           </Link>
+           <Link href="/nft/home">
+             <a className="lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-white items-center justify-center hover:bg-background hover:text-white">
+               Home
+             </a>
+           </Link>
+           <Link href="/nft/inventory">
+             <a className="lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-white items-center justify-center hover:bg-background hover:text-white">
+               Inventory
+             </a>
+           </Link>
+           <Link href="/nft/account">
+             <a className="lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-white items-center justify-center hover:bg-background hover:text-white">
+               Profile
+             </a>
+           </Link>
+           <p>
+             <p className="lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-white items-center justify-center hover:text-white">
+               Account: {userAddress}
+             </p>
+           </p>
+         </div>
+         <button type="button" onClick={connectWallet} className="text-gray-900 text-gray-900 bg-gradient-to-r from-lime-200 via-lime-400 to-lime-500 font-medium rounded-lg text-sm px-2 py-2 mt-0 text-center inline-flex items-center">
+           <img width={18} height={18} src="/metamask.svg" /> &nbsp; Connect with MetaMask
+         </button>
+       </div>
+     </nav>
   )
 }
 
-export default MarketHeader;
+export default CybornHeader;

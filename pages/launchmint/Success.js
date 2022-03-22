@@ -9,6 +9,8 @@ import { tokenIdsMinted } from "../launchmint/whitelist.js";
 import { ethers } from "ethers";
 import { IoCopyOutline } from "react-icons/io5";
 import { FaTelegramPlane, FaTwitter } from "react-icons/fa";
+import CybornHeader from "/components/CybornHeader";
+import CybornSubscribe from "/components/CybornFooter";
 
 function Success() {
   const useCopyToClipboard = (text) => {
@@ -157,6 +159,7 @@ function Success() {
       <link rel="icon" type="image/png" sizes="16x16" href="/ark.png" />
     </Head>
       <div className="bg-background min-h-screen h-full w-screen font-Ubuntu antialiased">
+      <CybornHeader />
         <div className="min-h-screen h-full w-full md:flex">
           <div className="p-2 flex-1 md:pt-10 md:pl-12">
             <p className="text-6xl font-medium text-center text-lime-100 md:text-left md:text-7xl">
@@ -247,6 +250,7 @@ function Success() {
             </div>
           </div>
         </div>
+        <CybornSubscribe />
       </div>
     </>
   );

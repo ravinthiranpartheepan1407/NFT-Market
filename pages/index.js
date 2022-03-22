@@ -19,7 +19,8 @@ export default function Home() {
 
         <CybornHeader />
         <CybornMain />
-        <Arkhammtimeline />    
+        &nbsp;
+        <Arkhammtimeline />
         <CybornSubscribe />
       </div>
   )
