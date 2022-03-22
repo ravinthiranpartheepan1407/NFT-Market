@@ -4,8 +4,8 @@ function Arkhammtimeline(){
   return(
     <div>
     <h1 className="text-center text-4xl text-white"> Our Launch Timeline </h1>
-    <ol class="bg-background items-center p-28 sm:flex">
-      <li class="relative mb-6 sm:mb-0">
+    <ol className="bg-background items-center p-28 sm:flex">
+      <li className="relative mb-6 sm:mb-0">
       <div className="flex items-center">
           <div className="flex z-10 justify-center items-center w-6 h-6 bg-gradient-to-r from-lime-200 via-lime-400 to-lime-500 rounded-full ring-0 ring-white dark:bg-blue-900 sm:ring-8 dark:ring-gray-900 shrink-0">
           </div>
@@ -18,7 +18,7 @@ function Arkhammtimeline(){
           <p className="text-base font-normal text-gray-500 dark:text-gray-400">Arkhamm NFT Minting Engine.</p>
       </div>
       </li>
-      <li class="relative mb-6 sm:mb-0">
+      <li className="relative mb-6 sm:mb-0">
       <div className="flex items-center">
           <div className="flex z-10 justify-center items-center w-6 h-6 bg-gradient-to-r from-lime-200 via-lime-400 to-lime-500 rounded-full ring-0 ring-white dark:bg-blue-900 sm:ring-8 dark:ring-gray-900 shrink-0">
           </div>
@@ -31,7 +31,7 @@ function Arkhammtimeline(){
           <p className="text-base font-normal text-gray-500 dark:text-gray-400">Arkhamm NFT Marketplace.</p>
       </div>
       </li>
-      <li class="relative mb-6 sm:mb-0">
+      <li className="relative mb-6 sm:mb-0">
       <div className="flex items-center">
           <div className="flex z-10 justify-center items-center w-6 h-6 bg-gradient-to-r from-lime-200 via-lime-400 to-lime-500 rounded-full ring-0 ring-white dark:bg-blue-900 sm:ring-8 dark:ring-gray-900 shrink-0">
           </div>
@@ -44,7 +44,7 @@ function Arkhammtimeline(){
           <p className="text-base font-normal text-gray-500 dark:text-gray-400">Arkhamm Initial Coin Offerings.</p>
       </div>
       </li>
-      <li class="relative mb-6 sm:mb-0">
+      <li className="relative mb-6 sm:mb-0">
       <div className="flex items-center">
           <div className="flex z-10 justify-center items-center w-6 h-6 bg-gradient-to-r from-lime-200 via-lime-400 to-lime-500 rounded-full ring-0 ring-white dark:bg-blue-900 sm:ring-8 dark:ring-gray-900 shrink-0">
           </div>
@@ -57,7 +57,7 @@ function Arkhammtimeline(){
           <p className="text-base font-normal text-gray-500 dark:text-gray-400">Arkhamm De-Centralized Finance.</p>
       </div>
       </li>
-      <li class="relative mb-6 sm:mb-0">
+      <li className="relative mb-6 sm:mb-0">
       <div className="flex items-center">
           <div className="flex z-10 justify-center items-center w-6 h-6 bg-gradient-to-r from-lime-200 via-lime-400 to-lime-500 rounded-full ring-0 ring-white dark:bg-blue-900 sm:ring-8 dark:ring-gray-900 shrink-0">
           </div>
@@ -70,7 +70,7 @@ function Arkhammtimeline(){
           <p className="text-base font-normal text-gray-500 dark:text-gray-400">Arkhamm De-Centralized Autonomous Org.</p>
       </div>
       </li>
-      <li class="relative mb-6 sm:mb-0">
+      <li className="relative mb-6 sm:mb-0">
       <div className="flex items-center">
           <div className="flex z-10 justify-center items-center w-6 h-6 bg-gradient-to-r from-lime-200 via-lime-400 to-lime-500 rounded-full ring-0 ring-white dark:bg-blue-900 sm:ring-8 dark:ring-gray-900 shrink-0">
           </div>
@@ -83,7 +83,7 @@ function Arkhammtimeline(){
           <p className="text-base font-normal text-gray-500 dark:text-gray-400">Arkhamm De-Centralized Exchange.</p>
       </div>
       </li>
-      <li class="relative mb-6 sm:mb-0">
+      <li className="relative mb-6 sm:mb-0">
       <div className="flex items-center">
           <div className="flex z-10 justify-center items-center w-6 h-6 bg-gradient-to-r from-lime-200 via-lime-400 to-lime-500 rounded-full ring-0 ring-white dark:bg-blue-900 sm:ring-8 dark:ring-gray-900 shrink-0">
           </div>
