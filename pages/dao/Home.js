@@ -344,7 +344,7 @@ export default function Home() {
 
       <div className="flex bg-background h-full justify-center items-center flex-col md:flex-row">
         <div className="p-10 flex-1 md:p-20">
-        <h1 className="text-6xl text-white font-bold text-white text-center">Arkhamm De-centralized Autonomous Organization</h1>
+        <h1 className="text-4xl text-white font-bold text-white text-center">Arkhamm De-centralized Autonomous Organization</h1>
           <br />
           <div className="grid grid-cols-3 grid-gap-8">
           <p className="block p-6 max-w-sm bg-white border border-gray-200 shadow-md hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700 text-center text-white text-xl font-light text-center text-primary-700 md:text-left">ARKHAMM NFT in Your Wallet: {nftBalance}</p>
