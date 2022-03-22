@@ -7,22 +7,9 @@ function CybornFooter(){
   <div className="mx-6 py-10 text-center md:text-left">
     <div className="grid grid-1 md:grid-cols-2 lg:grid-cols-5 gap-12">
       <div className="">
-        <h6 className="
-            uppercase
-            font-semibold
-            mb-4
-            flex
-            items-center
-            justify-center
-            md:justify-start
-          ">
-          <Link href='/'>
-            <a className='inline-flex items-center p-2 mr-4 '>
-             <img src="/ark.png" width={100} height={100} className="rounded" />
-            </a>
-          </Link>
-
-        </h6>
+        <h1 className="text-2xl uppercase font-semibold mb-4 flex items-center justify-center sm-hidden md:justify-start">
+          About Arkhamm
+        </h1>
         <p>
           Asia&#39;s first and largest web3 platform for De-Fi, De-Edu, DAO, Decentralized Job Finder, and non-fungible tokens (NFTs).
         </p>
