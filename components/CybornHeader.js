@@ -145,12 +145,7 @@ function CybornHeader(){
            </Link>
            <Link href="/">
              <a className="lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-white items-center justify-center hover:bg-background hover:text-white">
-               Join Arkhamm.edu
-             </a>
-           </Link>
-           <Link href="/">
-             <a className="lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-white items-center justify-center hover:bg-background hover:text-white">
-               Jobs
+               Join Arkhamm.blog
              </a>
            </Link>
            <p>
