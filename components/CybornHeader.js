@@ -143,7 +143,7 @@ function CybornHeader(){
                DEX
              </a>
            </Link>
-           <Link href="/">
+           <Link href="/blog/home">
              <a className="lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-white items-center justify-center hover:bg-background hover:text-white">
                Join Arkhamm.blog
              </a>
