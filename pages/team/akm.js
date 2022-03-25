@@ -2,7 +2,7 @@ import React from "react";
 import CybornHeader from "/components/CybornHeader";
 import CybornFooter from "/components/CybornFooter";
 import Link from "next/link";
-imp0ort Head from "next/head";
+import Head from "next/head";
 function akm(){
   return (
         <div>
