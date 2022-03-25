@@ -5,6 +5,8 @@ import CybornHeader from "../components/CybornHeader";
 import CybornSubscribe from "../components/CybornFooter";
 import CybornMain from "../components/CybornMain";
 import Arkhammtimeline from "../components/Arkhammtimeline";
+import Customers from "/components/Customers";
+
 
 export default function Home() {
   return (
@@ -20,9 +22,14 @@ export default function Home() {
 
         <CybornHeader />
         <CybornMain />
-        &nbsp;
+        <br />
+        <br />
         <Arkhammtimeline />
+        <Customers />
+        <br />
         <CybornSubscribe />
+
+
       </div>
   )
 }

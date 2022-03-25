@@ -3,7 +3,7 @@ import React from "react";
 function Arkhammtimeline(){
   return(
     <div>
-    <h1 className="text-center text-4xl text-white"> Our Launch Timeline </h1>
+    <h1 className="xl:text-5xl md:text-4xl text-2xl font-semibold leading-tight text-center text-white sm:mb-0 mb-12"> Our Launch Timeline </h1>
     <ol className="bg-background items-center p-28 sm:flex">
       <li className="relative mb-6 sm:mb-0">
       <div className="flex items-center">

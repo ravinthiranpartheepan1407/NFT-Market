@@ -15,8 +15,9 @@ function home(){
       <CybornHeader />
       <br />
       <br />
-        <div className="lg:grid grid-cols-3 grid-gap-4 flex justify-center items-center">
+        <div className="lg:grid grid-cols-2 grid-gap-4 place-items-center h-screen">
           <blockquote className="twitter-tweet"><p lang="en" dir="ltr">Launching Arkhamm NFT Marketplace on Polygon main network tomorrow at 09:00 (EET) Stay tuned!</p>&mdash; Ravinthiran (@surenravi1407) <a href="https://twitter.com/surenravi1407/status/1507022983323291651?ref_src=twsrc%5Etfw">March 24, 2022</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+          <blockquote class="twitter-tweet"><p lang="en" dir="ltr">We are live🥳🤟!! We have successfully launched our NFT marketplace on polygon network.<br />Our Features:<br />- Low Gas Fee - Easy to create NFTs <br />- Simple &amp; Elegant UI - IPFS Integration<br />- Low Market Fees - Royalties (5%)<br />Link: <a href="https://t.co/ktkFBTBRrc">https://t.co/ktkFBTBRrc</a> <a href="https://t.co/uMAg70PiS1">pic.twitter.com/uMAg70PiS1</a></p>&mdash; Arkhamm (@arkhamm1407) <a href="https://twitter.com/arkhamm1407/status/1507258105079377921?ref_src=twsrc%5Etfw">March 25, 2022</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
         </div>
         <br />
         <br />
