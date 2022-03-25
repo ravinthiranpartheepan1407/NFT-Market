@@ -88,7 +88,7 @@ class CybornCountdown extends Component {
             <Link href="/launchmint/whitelist">Claim Your Pass</Link>
           </div>
           <div className="w-72 h-16 py-6 text-gray-900 bg-gradient-to-r from-lime-200 via-lime-400 to-lime-500 shadow-lg shadow-lime-500/50 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2">
-            <Link href="/bounty/Home">Bounties</Link>
+            <Link href="/">Bounties</Link>
           </div>
         </div>
     </div>
