@@ -200,12 +200,12 @@ export default function Home() {
       <h1 className="ml-8 text-3xl text-white font-extrabold sm:text-5xl">
         <span className="text-3xl text-white font-extrabold sm:text-5xl"> Get Our AKM Tokens </span>
         <strong className="font-extrabold text-white sm:block">
-          Want to mint out tokens?
+          Want to mint our tokens?
         </strong>
       </h1>
 
       <p className="ml-8 max-w-lg mt-4 text-white sm:leading-relaxed sm:text-xl">
-        Get Our ICO and Gain access to our Web3 Resources
+        Mint Our Tokens and Gain access to our Web3 Resources
       </p>
       <br />
 
