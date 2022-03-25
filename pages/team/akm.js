@@ -2,9 +2,17 @@ import React from "react";
 import CybornHeader from "/components/CybornHeader";
 import CybornFooter from "/components/CybornFooter";
 import Link from "next/link";
+imp0ort Head from "next/head";
 function akm(){
   return (
         <div>
+        <Head>
+          <title>Arkhamm Web3</title>
+          <meta name="description" content="Arkhamm Blockchain" />
+          <link rel="apple-touch-icon" sizes="180x180" href="/ark.png" />
+          <link rel="icon" type="image/png" sizes="32x32" href="/ark.png" />
+          <link rel="icon" type="image/png" sizes="16x16" href="/ark.png" />
+        </Head>
         <CybornHeader />
             <div className="container flex justify-center mx-auto pt-16">
                 <div>
