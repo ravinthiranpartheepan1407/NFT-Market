@@ -198,9 +198,9 @@ export default function Home() {
   <div className="relative max-w-screen-xl px-4 py-32 mx-auto lg:h-screen lg:items-center lg:flex">
     <div className="max-w-xl text-center sm:text-left">
       <h1 className="ml-8 text-3xl text-white font-extrabold sm:text-5xl">
-        <span className="text-3xl text-white font-extrabold sm:text-5xl"> Get Our ICO Tokens </span>
+        <span className="text-3xl text-white font-extrabold sm:text-5xl"> Get Our Arkhamm Tokens </span>
         <strong className="font-extrabold text-white sm:block">
-          Want to get our coin offerings?
+          Want to mint out tokens?
         </strong>
       </h1>
 
