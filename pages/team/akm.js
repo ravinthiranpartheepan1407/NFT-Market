@@ -72,7 +72,7 @@ function akm(){
                                 <div className="px-6 mt-16">
                                     <div className="font-bold text-3xl text-white text-center pb-1">Rvin.Mtc</div>
                                     <p className="text-white text-sm text-center">Ai & Blockchain Engineer</p>
-                                    <p className="text-center text-white text-base pt-3 font-normal">An avid developer and engineer who loves to be creative and inventive. I have 4 years of experience in the field.</p>
+                                    <p className="text-center text-white text-base pt-3 font-normal">An avid developer and engineer who loves to be creative and inventive. I have 4 years of experience in the AI & Blockchain engineering field.</p>
                                     <div className="w-full flex justify-center pt-5 pb-5">
                                         <Link href="javascript:void(0)" className="mx-5">
                                             <div>
@@ -101,7 +101,7 @@ function akm(){
                                 </div>
                             </div>
                         </div>
-                      
+
 
                     </div>
                 </div>
