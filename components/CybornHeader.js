@@ -77,9 +77,9 @@ function CybornHeader(){
     }
 
   return(
-    <nav className='flex items-center flex-wrap bg-cybornheader p-1 '>
+    <nav className='flex items-center flex-wrap bg-cybornheader '>
        <Link href='/'>
-         <a className='inline-flex items-center p-2 mr-4 '>
+         <a className='inline-flex items-center p-1 mr-4 '>
           <img src="/ark.png" width={100} height={100} className="rounded" />
          </a>
        </Link>
@@ -107,7 +107,7 @@ function CybornHeader(){
            active ? '' : 'hidden'
          }   w-full lg:inline-flex lg:flex-grow lg:w-auto`}
        >
-         <div className="lg:text-base lg:inline-flex md:space-x-1 md:mt-0 md:text-sm lg:flex-row lg:ml-auto lg:w-auto w-full lg:items-center items-start flex flex-col lg:h-auto">
+         <div className="lg:text-base lg:inline-flex md:space-x-0 md:mt-0 md:text-sm lg:flex-row lg:ml-auto lg:w-auto w-full lg:items-center items-start flex flex-col lg:h-auto">
            <Link href="/nft/market">
              <a className="lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-white items-center justify-center hover:bg-background hover:text-white ">
                NFT Market
