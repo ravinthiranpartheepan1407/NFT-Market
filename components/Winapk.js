@@ -23,12 +23,12 @@ function Winapk(){
             <br />
 
             <div className="inline-flex items-center absolute left-1/2 transform -translate-x-1/2 -translate-y-1/2 flex-wrap gap-4 mt-8 text-center">
-              <button type="button" class="px-12 py-3 text-sm font-medium text-black rounded shadow font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center mr-2 bg-gradient-to-r from-lime-200 via-lime-400 to-lime-500 sm:w-auto active:bg-lime-100 hover:bg-lime-300 focus:outline-none focus:ring">
+              <button type="button" className="px-12 py-3 text-sm font-medium text-black rounded shadow font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center mr-2 bg-gradient-to-r from-lime-200 via-lime-400 to-lime-500 sm:w-auto active:bg-lime-100 hover:bg-lime-300 focus:outline-none focus:ring">
                 <FaWindows className="text-black" />
                   &nbsp; Windows
               </button>
 
-              <button type="button" class="px-12 py-3 text-sm font-medium text-black rounded shadow font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center mr-2 bg-gradient-to-r from-lime-200 via-lime-400 to-lime-500 sm:w-auto active:bg-lime-100 hover:bg-lime-300 focus:outline-none focus:ring">
+              <button type="button" className="px-12 py-3 text-sm font-medium text-black rounded shadow font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center mr-2 bg-gradient-to-r from-lime-200 via-lime-400 to-lime-500 sm:w-auto active:bg-lime-100 hover:bg-lime-300 focus:outline-none focus:ring">
                 <FaAndroid className="text-black" />
                 &nbsp; Android
               </button>
