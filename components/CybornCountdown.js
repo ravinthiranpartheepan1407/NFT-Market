@@ -83,11 +83,18 @@ class CybornCountdown extends Component {
         </div>
         <br />
         <br />
-        <div>
-          <div className="w-72 h-16 ml-20 py-6 text-gray-900 bg-gradient-to-r from-lime-200 via-lime-400 to-lime-500 shadow-lg shadow-lime-500/50 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2">
-            <Link href="/launchmint/whitelist">Claim Your Pass</Link>
+        <div className="lg:grid grid-cols-3">
+          <div className="ml-16 w-72 h-16 py-6 text-gray-900 bg-gradient-to-r from-lime-200 via-lime-400 to-lime-500 shadow-lg shadow-lime-500/50 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2">
+            <Link href="/launchmint/whitelist">Claim Your DAO Membership</Link>
           </div>
-      
+          <div className="ml-16 w-72 h-16 py-6 text-gray-900 bg-gradient-to-r from-lime-200 via-lime-400 to-lime-500 shadow-lg shadow-lime-500/50 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2">
+            <Link href="/services/apps">Dashboard</Link>
+          </div>
+
+          <div className="ml-16 w-72 h-16 py-6 text-gray-900 bg-gradient-to-r from-lime-200 via-lime-400 to-lime-500 shadow-lg shadow-lime-500/50 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2">
+            <Link href="#">Quant-Block Encryption</Link>
+          </div>
+
         </div>
     </div>
 

@@ -120,7 +120,7 @@ function CybornHeader(){
            </Link>
            <Link href="/defi/home">
              <a className="lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-white items-center justify-center hover:bg-background hover:text-white">
-               DEFI
+               DEX
              </a>
            </Link>
            <Link href="/launchmint/whitelist">
@@ -135,17 +135,12 @@ function CybornHeader(){
            </Link>
            <Link href="/">
              <a className="lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-white items-center justify-center hover:bg-background hover:text-white">
-               Farming
-             </a>
-           </Link>
-           <Link href="/">
-             <a className="lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-white items-center justify-center hover:bg-background hover:text-white">
-               DEX
+               De-Game
              </a>
            </Link>
            <Link href="/blog/home">
              <a className="lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-white items-center justify-center hover:bg-background hover:text-white">
-               Join Arkhamm.blog
+               Quant-Block-Encryption
              </a>
            </Link>
            <p>

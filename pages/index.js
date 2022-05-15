@@ -6,7 +6,7 @@ import CybornSubscribe from "../components/CybornFooter";
 import CybornMain from "../components/CybornMain";
 import Arkhammtimeline from "../components/Arkhammtimeline";
 import Customers from "/components/Customers";
-
+import Dashboard from "/components/Dashboard";
 
 export default function Home() {
   return (
@@ -24,7 +24,11 @@ export default function Home() {
         <CybornMain />
         <br />
         <br />
+        <br />
         <Arkhammtimeline />
+        <br />
+        <Dashboard />
+        <br />
         <Customers />
         <br />
         <CybornSubscribe />

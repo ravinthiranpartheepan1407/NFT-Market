@@ -14,7 +14,7 @@ function Arkhammtimeline(){
       <div className="mt-3 sm:pr-8">
           <h3 className="text-2xl font-semibold text-gray-900 dark:text-white">NFT Minting</h3>
           <br />
-          <time className="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">Launching on April 01</time>
+          <time className="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">Launched on April 01</time>
           <p className="text-base font-normal text-gray-500 dark:text-gray-400">Arkhamm NFT Minting Engine.</p>
       </div>
       </li>
@@ -27,7 +27,7 @@ function Arkhammtimeline(){
       <div className="mt-3 sm:pr-8">
           <h3 className="text-2xl font-semibold text-gray-900 dark:text-white">NFT Market</h3>
             <br />
-          <time className="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">Launching on April 01</time>
+          <time className="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">Launched on April 01</time>
           <p className="text-base font-normal text-gray-500 dark:text-gray-400">Arkhamm NFT Marketplace.</p>
       </div>
       </li>
@@ -38,9 +38,9 @@ function Arkhammtimeline(){
           <div className="hidden sm:flex w-full bg-gray-200 h-0.5 dark:bg-gray-700"></div>
       </div>
       <div className="mt-3 sm:pr-8">
-          <h3 className="text-2xl font-semibold text-gray-900 dark:text-white">ICO Launch</h3>
+          <h3 className="text-2xl font-semibold text-gray-900 dark:text-white">AKM Token</h3>
             <br />
-          <time className="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">Launching on April 01</time>
+          <time className="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">Launched on April 01</time>
           <p className="text-base font-normal text-gray-500 dark:text-gray-400">Arkhamm Initial Coin Offerings.</p>
       </div>
       </li>
@@ -51,9 +51,9 @@ function Arkhammtimeline(){
           <div className="hidden sm:flex w-full bg-gray-200 h-0.5 dark:bg-gray-700"></div>
       </div>
       <div className="mt-3 sm:pr-8">
-          <h3 className="text-2xl font-semibold text-gray-900 dark:text-white">De-Fi Launch</h3>
+          <h3 className="text-2xl font-semibold text-gray-900 dark:text-white">DEX Launch</h3>
             <br />
-          <time className="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">Launching on April 01</time>
+          <time className="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">Launched on April 01</time>
           <p className="text-base font-normal text-gray-500 dark:text-gray-400">Arkhamm De-Centralized Finance.</p>
       </div>
       </li>
@@ -66,7 +66,7 @@ function Arkhammtimeline(){
       <div className="mt-3 sm:pr-8">
           <h3 className="text-2xl font-semibold text-gray-900 dark:text-white">DAO Launch</h3>
             <br />
-          <time className="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">Launching on April 01</time>
+          <time className="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">Launched on April 01</time>
           <p className="text-base font-normal text-gray-500 dark:text-gray-400">Arkhamm De-Centralized Autonomous Org.</p>
       </div>
       </li>
@@ -77,9 +77,9 @@ function Arkhammtimeline(){
           <div className="hidden sm:flex w-full bg-gray-200 h-0.5 dark:bg-gray-700"></div>
       </div>
       <div className="mt-3 sm:pr-8">
-          <h3 className="text-2xl font-semibold text-gray-900 dark:text-white">DeX Launch</h3>
+          <h3 className="text-2xl font-semibold text-gray-900 dark:text-white">Game Launch</h3>
             <br />
-          <time className="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">Launching on May 15</time>
+          <time className="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">Launching on June 31</time>
           <p className="text-base font-normal text-gray-500 dark:text-gray-400">Arkhamm De-Centralized Exchange.</p>
       </div>
       </li>
@@ -90,10 +90,10 @@ function Arkhammtimeline(){
           <div className="hidden sm:flex w-full bg-gray-200 h-0.5 dark:bg-gray-700"></div>
       </div>
       <div className="mt-3 sm:pr-8">
-          <h3 className="text-2xl font-semibold text-gray-900 dark:text-white">Farming</h3>
+          <h3 className="text-2xl font-semibold text-gray-900 dark:text-white">De-Cloud</h3>
             <br />
-          <time className="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">Launching on June 15</time>
-          <p className="text-base font-normal text-gray-500 dark:text-gray-400">Arkhamm Farming Launch.</p>
+          <time className="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">Launching on June 31</time>
+          <p className="text-base font-normal text-gray-500 dark:text-gray-400">Arkhamm Cloud Service Launch.</p>
       </div>
       </li>
     </ol>
