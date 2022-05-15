@@ -11,7 +11,7 @@ function Dashboard(){
         <div className="hidden sm:block sm:inset-0 sm:absolute"></div>
         <div className="relative max-w-screen-xl px-4 py-32 mx-auto lg:h-screen lg:items-center lg:flex">
           <div className="text-center sm:text-left">
-            <h1 className="text-center lg:text-6xl text-white font-extrabold sm:text-5xl">
+            <h1 className="xl:text-5xl md:text-4xl text-2xl font-extrabold leading-tight text-center text-white sm:mb-0 mb-12">
               Curious about our Quantum-Blockchain based data encryption?
             </h1>
 

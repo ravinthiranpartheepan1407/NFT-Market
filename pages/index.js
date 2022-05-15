@@ -7,6 +7,7 @@ import CybornMain from "../components/CybornMain";
 import Arkhammtimeline from "../components/Arkhammtimeline";
 import Customers from "/components/Customers";
 import Dashboard from "/components/Dashboard";
+import Winapk from "/components/Winapk";
 
 export default function Home() {
   return (
@@ -31,6 +32,7 @@ export default function Home() {
         <br />
         <Customers />
         <br />
+        <Winapk />
         <CybornSubscribe />
 
 
