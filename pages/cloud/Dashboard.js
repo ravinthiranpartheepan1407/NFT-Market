@@ -168,7 +168,7 @@ function Dashboard(){
                   <div className="flex items-center justify-center w-full">
                       <label className="flex flex-col w-full h-32">
                           <div className="flex flex-col items-center justify-center pt-7">
-                              <Image src="/gallery.png" className="w-12 h-12 text-white group-hover:text-white-600">
+                              <Image src="/gallery.png" width={32} height={32}>
                               </Image>
                           </div>
 
