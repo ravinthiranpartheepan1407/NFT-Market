@@ -133,12 +133,12 @@ function CybornHeader(){
                DAO
              </a>
            </Link>
-           <Link href="/">
+           <Link href="/game/home">
              <a className="lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-white items-center justify-center hover:bg-background hover:text-white">
                De-Game
              </a>
            </Link>
-           <Link href="/">
+           <Link href="/quantum/home">
              <a className="lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-white items-center justify-center hover:bg-background hover:text-white">
                Quant-Block-Encryption
              </a>
