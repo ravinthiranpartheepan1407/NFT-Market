@@ -5,8 +5,8 @@ function Winapk(){
     <div className="bg-cybornheader">
     <section className="relative bg-background">
         <img
-          className="absolute inset-0 object-[75%] sm:object-[25%] object-cover w-full h-full"
-          src="/Service.jpg"
+          className="absolute inset-0 object-[75%] sm:object-[25%] object-cover bg-gradient-to-r from-cybornheader to-bg-purple-900  w-full h-full"
+          src="/Hosting.png"
         />
 
         <div className="hidden sm:block sm:inset-0 sm:absolute"></div>

@@ -5,7 +5,7 @@ function Dashboard(){
     <section className="relative bg-background">
         <img
           className="absolute inset-0 object-[75%] sm:object-[25%] object-cover w-full h-full"
-          src="/Service.jpg"
+          src="/Book.jpg"
         />
 
         <div className="hidden sm:block sm:inset-0 sm:absolute"></div>

@@ -3,7 +3,7 @@ import CybornCountdown from './CybornCountdown';
 
 function CybornMain(){
   return(
-    <div className="bg-[url('/bg.jpg')] object-fill">
+    <div className="bg-[url('/Blog.png')] object-fill">
       <CybornCountdown />
 
     </div>

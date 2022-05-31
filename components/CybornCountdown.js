@@ -47,7 +47,7 @@ class CybornCountdown extends Component {
   }
 
   componentDidMount() {
-    this.deadline = new Date("Oct 08, 2022 21:00:00").getTime();
+    this.deadline = new Date("June 01, 2022 00:00:00").getTime();
 
     this.x = setInterval(this.count, 1000);
   }
@@ -57,7 +57,7 @@ class CybornCountdown extends Component {
 
 
     return (
-      <div className="backgroundImg min-w-screen min-h-screen bg-gradient-to-r from-cybornheader to-bg-purple-900 flex items-center justify-center px-5 py-5" id="countdown">
+      <div className="min-w-screen min-h-screen flex items-center justify-center px-5 py-5" id="countdown">
     <div className="text-white">
         <h1 className="text-3xl text-center mb-3 font-extralight">When will Arkhamm Web3 launch?*</h1>
         <br />
