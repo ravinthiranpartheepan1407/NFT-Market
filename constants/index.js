@@ -2561,3 +2561,89 @@ export const ARKHAMM_SOCIAL_ABI = [
 ];
 
 export const ARKHAMM_SOCIAL_ADDRESS = "0x7F048080198CfC27AEe3D2eFCf293D88D0076791"
+
+export const ARKHAMM_CLOUD_ADDRESS = "0x555C882cD715567D1C6eD80D9B69D00447119825"
+
+export const ARKHAMM_CLOUD_ABI = [
+  {
+    "inputs": [
+      {
+        "internalType": "string",
+        "name": "_hashes",
+        "type": "string"
+      },
+      {
+        "internalType": "string",
+        "name": "_fileType",
+        "type": "string"
+      },
+      {
+        "internalType": "string",
+        "name": "_fileName",
+        "type": "string"
+      }
+    ],
+    "name": "addMyArk",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "getMyArk",
+    "outputs": [
+      {
+        "components": [
+          {
+            "internalType": "string",
+            "name": "hashes",
+            "type": "string"
+          },
+          {
+            "internalType": "string",
+            "name": "fileType",
+            "type": "string"
+          },
+          {
+            "internalType": "string",
+            "name": "fileName",
+            "type": "string"
+          }
+        ],
+        "internalType": "struct ArkhammCloud.file[]",
+        "name": "",
+        "type": "tuple[]"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "_addr",
+        "type": "address"
+      },
+      {
+        "internalType": "string",
+        "name": "_hashes",
+        "type": "string"
+      },
+      {
+        "internalType": "string",
+        "name": "_fileType",
+        "type": "string"
+      },
+      {
+        "internalType": "string",
+        "name": "_fileName",
+        "type": "string"
+      }
+    ],
+    "name": "shareMyArk",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  }
+];
