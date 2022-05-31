@@ -1,6 +1,8 @@
 import React from "react";
 import Link from "next/link";
+import {useRouter} from "next/router";
 function Servicessplit(){
+  const router = useRouter();
   return(
     <div>
     <br />
@@ -15,8 +17,8 @@ function Servicessplit(){
                 <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">De-Cloud</h5>
             </Link>
             <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">We know that you are curious about this product, we will definitely fulfill your expectations!</p>
-            <button className="block w-full px-12 py-3 text-sm font-medium text-black rounded shadow bg-gradient-to-r from-lime-200 via-lime-400 to-lime-500 sm:w-auto active:bg-lime-100 hover:bg-lime-300 focus:outline-none focus:ring">
-                Coming Soon
+            <button onClick={()=>router.push("/cloud/Home")} className="block w-full px-12 py-3 text-sm font-medium text-black rounded shadow bg-gradient-to-r from-lime-200 via-lime-400 to-lime-500 sm:w-auto active:bg-lime-100 hover:bg-lime-300 focus:outline-none focus:ring">
+              View
             </button>
         </div>
       </div>

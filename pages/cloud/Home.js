@@ -39,7 +39,7 @@ function Home(){
             </button>
 
             <button className="block w-full px-12 py-3 text-sm font-medium bg-white rounded shadow text-black sm:w-auto focus:outline-none focus:ring">
-              Buy Disk Space
+              Buy Disk Space (Coming Soon)
             </button>
           </div>
         </div>

@@ -168,7 +168,7 @@ function Dashboard(){
                   <div className="flex items-center justify-center w-full">
                       <label className="flex flex-col w-full h-32">
                           <div className="flex flex-col items-center justify-center pt-7">
-                              <Image src="/gallery.png" width={32} height={32}>
+                              <Image src="/gallery.png" width={96} height={96} className="text-white  shadow-glow p-8">
                               </Image>
                           </div>
 
@@ -179,13 +179,13 @@ function Dashboard(){
               </div>
               <input
                 placeholder="File Name"
-                className="mt-8 border rounded p-4 block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
+                className="mt-8 border rounded p-4 block py-2.5 px-0 w-full text-sm text-white bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
                 onChange={e => updateFormInput({ ...formInput, name: e.target.value })}
 
               />
               <input
                 placeholder="File Type"
-                className="mt-8 border rounded p-4 block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
+                className="mt-8 border rounded p-4 block py-2.5 px-0 w-full text-sm text-white bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
                 onChange={e => updateFormInput({ ...formInput, type: e.target.value })}
 
               />
@@ -193,13 +193,16 @@ function Dashboard(){
               <div className="flex p-2 space-x-4">
                   <button className="block w-full absolute left-1/2 transform -translate-x-1/2 sm:w-auto">{renderButton()}</button>
               </div>
+              <br />
+              <br />
           </div>
       </div>
-      <hr />
+      <hr className="border-cybornheader" />
       <div className="relative overflow-x-auto shadow-md sm:rounded-lg">
       <table className="w-full text-sm text-left text-white dark:text-white">
-      <thead className="text-xs text-white uppercase border-b">
+      <thead className="text-xs text-white uppercase border-b border-cybornheader">
       <tr>
+      <br />
       <th scope="col" className="px-6 py-6">
       File Name
       </th>
@@ -241,7 +244,7 @@ function Dashboard(){
       </div>
       <div>
       </div>
-      <hr />
+      <hr className="border-cybornheader" />
       <CybornFooter />
     </div>
   )
