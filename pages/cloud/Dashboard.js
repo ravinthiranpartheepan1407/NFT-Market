@@ -7,7 +7,7 @@ import Link from "next/link";
 import {create as ipfsHttpClient} from "ipfs-http-client";
 import Web3Modal from "web3modal";
 import { ethers } from 'ethers'
-Import {Image} from "next/image"
+import Image from "next/image"
 
 const client = ipfsHttpClient('https://ipfs.infura.io:5001/api/v0')
 
