@@ -30,7 +30,7 @@ function Home(){
           </h1>
 
           <p className="max-w-lg mt-4 text-white sm:leading-relaxed sm:text-xl">
-            World's one of the best gaming platform to provide game based NFT assests, DAO, DEx, amd VR NFT Showroom Integration Features within one game.
+            World&apos;s one of the best gaming platform to provide game based NFT assests, DAO, DEx, amd VR NFT Showroom Integration Features within one game.
           </p>
 
           <div className="flex flex-wrap gap-4 mt-8 text-center">
