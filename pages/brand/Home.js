@@ -38,7 +38,7 @@ function Home(){
               Go To Hamm Verifier
             </button>
             <button onClick={()=> router.push("/brand/dashboard")} className="block w-full px-12 py-3 text-sm font-medium bg-white rounded shadow text-black sm:w-auto focus:outline-none focus:ring">
-              Inventory
+              Your Inventory
             </button>
           </div>
         </div>
