@@ -38,10 +38,10 @@ function Arkhammtimeline(){
           <div className="hidden sm:flex w-full bg-gray-200 h-0.5 dark:bg-gray-700"></div>
       </div>
       <div className="mt-3 sm:pr-8">
-          <h3 className="text-2xl font-semibold text-gray-900 dark:text-white">AKM Token</h3>
+          <h3 className="text-2xl font-semibold text-gray-900 dark:text-white">AKM Game Tag</h3>
             <br />
           <time className="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">Launched on June 01</time>
-          <p className="text-base font-normal text-gray-500 dark:text-gray-400">Arkhamm Initial Coin Offerings.</p>
+          <p className="text-base font-normal text-gray-500 dark:text-gray-400">Arkhamm Game Tag NFT Minting.</p>
       </div>
       </li>
       <li className="relative mb-6 sm:mb-0">
