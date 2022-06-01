@@ -100,14 +100,14 @@ function Verifier(){
           <div className="flex flex-col items-center md:items-start">
               <h1 className="text-white text-5xl text-extrabold"> Verify Your Product/Brand </h1>
               <input
-                placeholder="Product / Brand Name"
+                placeholder="Product / Brand Name" required
                 className="mt-8 border rounded p-4 block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
                 onChange={e => updateFormInput({ ...formInput, name: e.target.value })}
 
               />
                 <br />
               <textarea
-                placeholder="Product / Brand URL"
+                placeholder="Product / Brand URL" required
                 className="mt-2 border rounded p-4 block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
                 onChange={e => updateFormInput({ ...formInput, description: e.target.value })}
 
@@ -115,14 +115,14 @@ function Verifier(){
                 <br />
               <div className="mt-1 text-sm text-gray-500 dark:text-gray-300" id="user_avatar_help">This is for Arkhamm Market fee and the second transaction will be for token minting fee* </div>
               <input
-                placeholder="Product / Brand Upload Fee"
+                placeholder="Product / Brand Upload Fee" required
                 className="mt-2 border rounded p-4 block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
                 onChange={e => updateFormInput({ ...formInput, price: e.target.value })}
                 value="0.001" disabled
               />
               <br />
-              <div className="mt-1 text-sm text-gray-500 dark:text-gray-300" id="user_avatar_help">Upload Manual QR(Optional)</div>
-              <input name="Asset" className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" onChange={onChange} type="file" />
+              <div className="mt-1 text-sm text-gray-500 dark:text-gray-300" id="user_avatar_help">Upload QR*</div>
+              <input name="Asset" required className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" onChange={onChange} type="file" />
               <br />
                 <div className="mt-1 text-sm text-gray-500 dark:text-gray-300" id="user_avatar_help">Your Uploaded will be shown on right side*</div>
                 <br />
