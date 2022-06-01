@@ -126,13 +126,14 @@ function Verifier(){
               <br />
                 <div className="mt-1 text-sm text-gray-500 dark:text-gray-300" id="user_avatar_help">Your Uploaded will be shown on right side*</div>
                 <br />
-              <button onClick={createMarket} className="block w-full px-12 py-3 text-sm font-medium text-black rounded shadow bg-gradient-to-r from-lime-200 via-lime-400 to-lime-500 sm:w-auto active:bg-lime-100 hover:bg-lime-300 focus:outline-none focus:ring">
+              <div className="lg:grid grid-cols-2 gap-4">
+              <button onClick={createMarket} className="mt-1 block w-full px-12 py-3 text-sm font-medium text-black rounded shadow bg-gradient-to-r from-lime-200 via-lime-400 to-lime-500 sm:w-auto active:bg-lime-100 hover:bg-lime-300 focus:outline-none focus:ring">
                 Verify
               </button>
-              <button onClick={()=> router.push("/brand/dashboard")} className="block w-full px-12 py-3 text-sm font-medium bg-white rounded shadow text-black sm:w-auto focus:outline-none focus:ring">
+              <button onClick={()=> router.push("/brand/dashboard")} className="mt-1 block w-full px-12 py-3 text-sm font-medium bg-white rounded shadow text-black sm:w-auto focus:outline-none focus:ring">
                 Your Inventory
               </button>
-
+              </div>
           </div>
         </div>
         <div className="flex-1 shrink-0">
