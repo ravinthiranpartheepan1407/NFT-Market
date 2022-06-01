@@ -3,8 +3,21 @@ import {useRouter} from "next/router";
 import CybornHeader from "/components/CybornHeader"
 import CybornFooter from "/components/CybornFooter"
 import Head from "next/head";
+import Swal from 'sweetalert2';
+import withReactContent from "sweetalert2-react-content";
+
+
 function Home(){
   const router = useRouter();
+  const MySwal = withReactContent(Swal);
+  const open = () => {
+    MySwal.fire({
+      title: 'App Coming Soon',
+      text: 'Launching in 2 days',
+      background:'#04111d',
+      icon: 'success',
+    });
+  };
   return(
     <div>
     <Head>
@@ -33,12 +46,18 @@ function Home(){
             We are offering service for the e-commerce organizations to verify their brand / product on-chain to avoid brand/product ownership tampering issues.
           </p>
 
-          <div className="flex flex-wrap gap-4 mt-8 text-center">
+          <div className="flex flex-wrap lg:grid grid-cols-2 gap-4 mt-8 text-center">
             <button onClick={()=> router.push("/brand/verifier")} className="block w-full px-12 py-3 text-sm font-medium text-black rounded shadow bg-gradient-to-r from-lime-200 via-lime-400 to-lime-500 sm:w-auto active:bg-lime-100 hover:bg-lime-300 focus:outline-none focus:ring">
               Go To Hamm Verifier
             </button>
             <button onClick={()=> router.push("/brand/dashboard")} className="block w-full px-12 py-3 text-sm font-medium bg-white rounded shadow text-black sm:w-auto focus:outline-none focus:ring">
               Your Inventory
+            </button>
+            <button onClick={()=> router.push("/brand/qrgen")} className="block w-full px-12 py-3 text-sm font-medium bg-white rounded shadow text-black sm:w-auto focus:outline-none focus:ring">
+              Ark QR Gen
+            </button>
+            <button onClick={open} className="block w-full px-12 py-3 text-sm font-medium bg-white rounded shadow text-black sm:w-auto focus:outline-none focus:ring">
+              Scan App
             </button>
           </div>
         </div>
