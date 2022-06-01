@@ -3,6 +3,7 @@ import {useRouter} from "next/router";
 import CybornHeader from "/components/CybornHeader"
 import CybornFooter from "/components/CybornFooter"
 import Head from "next/head";
+import Link from "next/link"
 function Qrgen(){
   const router = useRouter()
   const [temp, setTemp] = useState("");
@@ -47,7 +48,6 @@ function Qrgen(){
           <br />
           <input className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" type="text" onChange={(e) => {setTemp(e.target.value)}} placeholder="Enter text to encode" />
           <br />
-          <p className="mt-1 text-2xl text-white">Download the Image by right click on the image and choose save Image*</p>
           <br />
           <div className="flex flex-wrap gap-4 mt-8 text-center">
             <button onClick={handleClick} className="block w-full px-12 py-3 text-sm font-medium text-black rounded shadow bg-gradient-to-r from-lime-200 via-lime-400 to-lime-500 sm:w-auto active:bg-lime-100 hover:bg-lime-300 focus:outline-none focus:ring">
@@ -56,6 +56,9 @@ function Qrgen(){
             <button onClick={()=> router.push("/brand/verifier")} className="block w-full px-12 py-3 text-sm font-medium bg-white rounded shadow text-black sm:w-auto focus:outline-none focus:ring">
               Go To Verifier
             </button>
+            <Link href={qrCode} download="QRCode">
+              <button className="block w-full px-12 py-3 text-sm font-medium bg-white rounded shadow text-black sm:w-auto focus:outline-none focus:ring" type="button">Download</button>
+            </Link>
 
 
           </div>
