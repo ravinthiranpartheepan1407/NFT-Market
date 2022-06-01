@@ -212,7 +212,8 @@ export default function Home() {
       <div>
       {walletConnected ? (
         <div className="p-8 text-center">
-          {renderButton()}
+        <button className="block w-full py-4 ml-8 px-4 text-sm font-medium text-black rounded shadow bg-gradient-to-r from-lime-200 via-lime-400 to-lime-500 sm:w-auto active:bg-lime-100 hover:bg-lime-300 focus:outline-none focus:ring"> Launching Soon </button>
+
         </div>
         ):(
             <div className="flex">
