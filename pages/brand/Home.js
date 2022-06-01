@@ -37,7 +37,7 @@ function Home(){
             <button onClick={()=> router.push("/brand/verifier")} className="block w-full px-12 py-3 text-sm font-medium text-black rounded shadow bg-gradient-to-r from-lime-200 via-lime-400 to-lime-500 sm:w-auto active:bg-lime-100 hover:bg-lime-300 focus:outline-none focus:ring">
               Go To Hamm Verifier
             </button>
-            <button onClick={()=> router.push("/brand/dashboard")} className="block w-full px-12 py-3 text-sm font-medium text-black rounded shadow bg-gradient-to-r from-lime-200 via-lime-400 to-lime-500 sm:w-auto active:bg-lime-100 hover:bg-lime-300 focus:outline-none focus:ring">
+            <button onClick={()=> router.push("/brand/dashboard")} className="block w-full px-12 py-3 text-sm font-medium bg-white rounded shadow text-black sm:w-auto focus:outline-none focus:ring">
               Go To Hamm Verifier
             </button>
 
