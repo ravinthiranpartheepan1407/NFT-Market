@@ -73,7 +73,7 @@ function Verifier(){
 
     transaction = await contract.createMarketItem(ARKHAMM_BRANDTKN_ADDRESS, tokenId, price, { value: listingPrice })
     await transaction.wait()
-    router.push('/nft/home')
+    router.push('/brand/dashboard')
   }
   return(
     <div>
