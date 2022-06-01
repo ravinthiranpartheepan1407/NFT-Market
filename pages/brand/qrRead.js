@@ -28,7 +28,7 @@ function qrRead(){
             Curious About Our Brand / Product Verification Feature on Blockchain?
           </h1>
           <br />
-          <form enctype="multipart/form-data" action="http://api.qrserver.com/v1/read-qr-code/" method="POST">
+          <form action="http://api.qrserver.com/v1/read-qr-code/" method="POST">
             <input type="hidden" name="MAX_FILE_SIZE" value="1048576" />
             <br />
             <input className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" name="file" type="file" />
@@ -37,7 +37,7 @@ function qrRead(){
           </form>
           <br />
         </div>
-        
+
       </div>
     </section>
     <CybornFooter />
