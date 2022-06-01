@@ -2,7 +2,7 @@ import React from "react"
 import {  toast } from 'react-toastify';
 import { ToastContainer } from 'react-toastify';
 import Head from 'next/head'
-import MarketHeader from "/components/MarketHeader"
+import CybornHeader from "/components/CybornHeader"
 import CybornFooter from "/components/CybornFooter"
 import { useState } from 'react'
 import { ethers } from 'ethers'
@@ -77,7 +77,7 @@ function Verifier(){
   }
   return(
     <div>
-    <MarketHeader />
+    <CybornHeader />
     <div className="h-screen font-Ubuntu w-screen antialiased">
           <ToastContainer position="top-left"
       autoClose={1000}
