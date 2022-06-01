@@ -25,8 +25,8 @@ const Error = () => {
                 <img className="md:hidden" src="https://i.ibb.co/8gTVH2Y/Group-198.png" alt="" />
             </div>
             <div className="w-full lg:w-1/2">
-                <h1 className="py-4 text-3xl lg:text-4xl font-extrabold text-white">Looks like you've found the doorway to the great nothing</h1>
-                <p className="py-4 text-xl font-medium text-white">The content you’re looking for doesn’t exist. Either it was removed, or you mistyped the link.</p>
+                <h1 className="py-4 text-3xl lg:text-4xl font-extrabold text-white">Looks like you have found the doorway to the great nothing</h1>
+                <p className="py-4 text-xl font-medium text-white">The content you arere looking for doesn’t exist. Either it was removed, or you mistyped the link.</p>
                 <p className="py-2 text-xl font-medium text-white">Sorry about that! Please visit our hompage to get where you need to go.</p>
                 <button onClick={()=>{router.push("/")}} className="w-full lg:w-auto my-4 rounded-md font-medium shadow-glow px-1 sm:px-16 py-5 bg-gradient-to-r from-lime-200 via-lime-400 to-lime-500 text-black hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-700 focus:ring-opacity-50">Go back to Homepage</button>
             </div>
