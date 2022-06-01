@@ -13,6 +13,9 @@ import {  toast } from 'react-toastify';
 import { ToastContainer } from 'react-toastify';
 import CybornHeader from "/components/CybornHeader";
 import CybornSubscribe from "/components/CybornFooter";
+import Swal from 'sweetalert2';
+import withReactContent from "sweetalert2-react-content";
+
 
 
 export default function Home() {
@@ -27,6 +30,15 @@ export default function Home() {
     draggable: true,
     progress: undefined,
     });
+
+    const MySwal = withReactContent(Swal);
+      const open = () => {
+        MySwal.fire({
+          title: 'You Have Successfully Minted Arkhamm Game DAO Membership Card',
+          background:'#04111d',
+          icon: 'success',
+        });
+      };
 
 
   const useCopyToClipboard = (text) => {
@@ -130,7 +142,7 @@ export default function Home() {
       setLoading(true);
       await tx.wait();
       setLoading(false);
-      window.alert("You successfully minted a Arkhamm NFT");
+      open();
       window.location.href = "/launchmint/Success";
     } catch (err) {
       console.error(err);

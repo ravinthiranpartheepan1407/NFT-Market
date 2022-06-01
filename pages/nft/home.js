@@ -8,6 +8,8 @@ import Image from 'next/image'
 import MarketHeader from "/components/MarketHeader"
 import CybornFooter from "/components/CybornFooter"
 import Head from "next/head";
+import Swal from 'sweetalert2';
+import withReactContent from "sweetalert2-react-content";
 
 import { ARKHAMM_NFT_ADDRESS, ARKHAMM_NFT_MARKET_CONTRACT_ADDRESS, ARKHAMM_NFT_MARKET_CONTRACT_ABI, ARKHAMM_NFT_ABI} from '/constants'
 
@@ -17,6 +19,18 @@ export default function Home() {
   const router = useRouter();
   const [nfts, setNfts] = useState([])
   const [loadingState, setLoadingState] = useState('not-loaded')
+
+  const MySwal = withReactContent(Swal);
+
+  const open = () => {
+    MySwal.fire({
+      title: 'Successfully Bought This NFT',
+      imageUrl: '{fileUrl}',
+      text: 'Share with your audience',
+      background:'#04111d',
+      icon: 'success',
+    });
+  };
   useEffect(() => {
     loadNFTs()
   }, [])
@@ -57,6 +71,7 @@ export default function Home() {
       value: price
     })
     await transaction.wait()
+    open();
     loadNFTs()
   }
   if (loadingState === 'loaded' && !nfts.length) return (<h1 className="px-20 py-10 text-3xl">No items in marketplace</h1>)

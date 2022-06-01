@@ -13,6 +13,10 @@ const client = ipfsHttpClient('https://ipfs.infura.io:5001/api/v0')
 
 import{ARKHAMM_CLOUD_ABI, ARKHAMM_CLOUD_ADDRESS} from "/constants"
 
+import Swal from 'sweetalert2';
+import withReactContent from "sweetalert2-react-content";
+
+
 function Dashboard(){
 
   const [walletConnected, setWalletConnected] = useState(false);
@@ -20,6 +24,15 @@ function Dashboard(){
   const [fileUrl, setFileUrl] = useState(null)
   const [formInput, updateFormInput] = useState({ name: '', type: '' })
   const router = useRouter();
+
+  const MySwal = withReactContent(Swal);
+      const open = () => {
+        MySwal.fire({
+          title: 'You Have Successfully Upload Your File To Arkhamm De-Cloud',
+          background:'#04111d',
+          icon: 'success',
+        });
+      };
 
   const [docts, setDocts] = useState([])
   const [ftc, setFtc] = useState([])
@@ -94,6 +107,7 @@ function Dashboard(){
 
     let contract = new ethers.Contract(ARKHAMM_CLOUD_ADDRESS, ARKHAMM_CLOUD_ABI, signer)
     let transaction = await contract.addMyArk(url, formInput.type, formInput.name)
+    open();
     await transaction.wait()
     router.push('/cloud/Dashboard')
   }

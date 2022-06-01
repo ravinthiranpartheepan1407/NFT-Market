@@ -4,6 +4,7 @@ import GameHeader from "/components/GameHeader"
 import GameHead from "/components/GameHead"
 import CybornFooter from "/components/CybornFooter"
 import Head from "next/head";
+
 function Home(){
   const router = useRouter();
   const vidRef = useRef();

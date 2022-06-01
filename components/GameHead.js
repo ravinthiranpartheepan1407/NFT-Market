@@ -11,7 +11,8 @@ import moment from "moment";
 import { BiWalletAlt } from "react-icons/bi";
 import {  toast } from 'react-toastify';
 import { ToastContainer } from 'react-toastify';
-
+import Swal from 'sweetalert2';
+import withReactContent from "sweetalert2-react-content";
 
 
 export default function GameHead() {
@@ -27,6 +28,17 @@ export default function GameHead() {
     draggable: true,
     progress: undefined,
     });
+
+    const MySwal = withReactContent(Swal);
+      const open = () => {
+        MySwal.fire({
+          title: 'Successfully Minted Arkhamm Game Tag',
+          imageUrl: '{fileUrl}',
+          text: 'Share with your audience',
+          background:'#04111d',
+          icon: 'success',
+        });
+      };
 
 
   const useCopyToClipboard = (text) => {
@@ -136,7 +148,7 @@ export default function GameHead() {
       setLoading(true);
       await tx.wait();
       setLoading(false);
-      window.alert("You successfully minted a Arkhamm Game NFT Tag");
+      open();
       window.location.href = "/game/Success";
     } catch (err) {
       console.error(err);
@@ -160,6 +172,7 @@ export default function GameHead() {
       setLoading(true);
       await tx.wait();
       setLoading(false);
+      open();
       window.location.href = "/game/Success";
     } catch (err) {
       console.log(err.data.message)

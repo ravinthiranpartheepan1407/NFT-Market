@@ -11,6 +11,9 @@ import { useRouter } from 'next/router'
 import Web3Modal from 'web3modal'
 import Link from 'next/link'
 import Image from 'next/image'
+import Swal from 'sweetalert2';
+import withReactContent from "sweetalert2-react-content";
+
 
 const client = ipfsHttpClient('https://ipfs.infura.io:5001/api/v0')
 
@@ -22,6 +25,26 @@ function Verifier(){
   const [fileUrl, setFileUrl] = useState(null)
   const [formInput, updateFormInput] = useState({ price: '', name: '', description: '' })
   const router = useRouter()
+  const MySwal = withReactContent(Swal);
+  const open = () => {
+    MySwal.fire({
+      title: 'Successfully Verified This Product/Brand',
+      imageUrl: '{fileUrl}',
+      text: 'Share with your audience',
+      background:'#04111d',
+      icon: 'success',
+    });
+  };
+
+  const mintOpen = () => {
+    MySwal.fire({
+      title: 'Arkhamm Market Fee Transaction Completed and Please Complete Token transaction',
+      text: 'Proceed to verify your product/brand tokenid in the arkhamm market',
+      background:'#04111d',
+      icon: 'success',
+      timer: 2500
+    });
+  };
 
   async function onChange(e) {
     const file = e.target.files[0]
@@ -66,13 +89,14 @@ function Verifier(){
     let value = event.args[2]
     let tokenId = value.toNumber()
     const price = ethers.utils.parseUnits(formInput.price, 'ether')
-
+    mintOpen();
     contract = new ethers.Contract(ARKHAMM_BRAND_ADDRESS, ARKHAMM_BRAND_ABI, signer)
     let listingPrice = await contract.getListingPrice()
     listingPrice = listingPrice.toString()
 
     transaction = await contract.createMarketItem(ARKHAMM_BRANDTKN_ADDRESS, tokenId, price, { value: listingPrice })
     await transaction.wait()
+    open();
     router.push("/brand/dashboard")
   }
   return(

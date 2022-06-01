@@ -12,6 +12,10 @@ import {
 import styles from "/styles/Home.module.css";
 import CybornHeader from "/components/CybornHeader"
 import CybornFooter from "/components/CybornFooter"
+import Swal from 'sweetalert2';
+import withReactContent from "sweetalert2-react-content";
+
+
 
 export default function Home() {
   const [treasuryBalance, setTreasuryBalance] = useState("0");
@@ -26,7 +30,30 @@ export default function Home() {
   const [walletConnected, setWalletConnected] = useState(false);
   const web3ModalRef = useRef();
 
+  const MySwal = withReactContent(Swal);
+    const open = () => {
+      MySwal.fire({
+        title: 'Successfully Created your DAO Proposal in Arkhamm Game DAO',
+        background:'#04111d',
+        icon: 'success',
+      });
+    };
 
+    const myOpen = () => {
+      MySwal.fire({
+        title: 'Successfully Voted on the Proposal',
+        background:'#04111d',
+        icon: 'success',
+      });
+    };
+
+    const Myopen = () => {
+      MySwal.fire({
+        title: 'Successfully Executed the Proposal',
+        background:'#04111d',
+        icon: 'success',
+      });
+    };
 
   const connectWallet = async () => {
     try {
@@ -78,6 +105,7 @@ export default function Home() {
       const txn = await daoContract.createProposal(arkhammNftTokenID);
       setLoading(true);
       await txn.wait();
+      open();
       await getNumProposalsInDAO();
       setLoading(false);
     } catch (error) {
@@ -130,6 +158,7 @@ export default function Home() {
       const txn = await daoContract.voteOnProposal(proposalId, vote);
       setLoading(true);
       await txn.wait();
+      myOpen();
       setLoading(false);
       await fetchAllProposals();
     } catch (error) {
@@ -145,6 +174,7 @@ export default function Home() {
       const txn = await daoContract.executeProposal(proposalId);
       setLoading(true);
       await txn.wait();
+      Myopen();
       setLoading(false);
       await fetchAllProposals();
     } catch (error) {
