@@ -3,8 +3,7 @@ import {useRouter} from "next/router";
 import CybornHeader from "/components/CybornHeader"
 import CybornFooter from "/components/CybornFooter"
 import Head from "next/head";
-function Home(){
-  const router = useRouter();
+function qrRead(){
   return(
     <div>
     <Head>
@@ -28,21 +27,17 @@ function Home(){
           <h1 className="text-3xl text-white font-extrabold sm:text-5xl">
             Curious About Our Brand / Product Verification Feature on Blockchain?
           </h1>
-
-          <p className="max-w-lg mt-4 text-white sm:leading-relaxed sm:text-xl">
-            We are offering service for the e-commerce organizations to verify their brand / product on-chain to avoid brand/product ownership tampering issues.
-          </p>
-
-          <div className="flex flex-wrap gap-4 mt-8 text-center">
-            <button onClick={()=> router.push("/brand/verifier")} className="block w-full px-12 py-3 text-sm font-medium text-black rounded shadow bg-gradient-to-r from-lime-200 via-lime-400 to-lime-500 sm:w-auto active:bg-lime-100 hover:bg-lime-300 focus:outline-none focus:ring">
-              Go To Hamm Verifier
-            </button>
-            <button onClick={()=> router.push("/brand/qrgen")} className="block w-full px-12 py-3 text-sm font-medium bg-white rounded shadow text-black sm:w-auto focus:outline-none focus:ring">
-              Ark QR
-            </button>
-
-          </div>
+          <br />
+          <form enctype="multipart/form-data" action="http://api.qrserver.com/v1/read-qr-code/" method="POST">
+            <input type="hidden" name="MAX_FILE_SIZE" value="1048576" />
+            <br />
+            <input className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" name="file" type="file" />
+            <br />
+            <input className="block w-full px-12 py-3 text-sm font-medium text-black rounded shadow bg-gradient-to-r from-lime-200 via-lime-400 to-lime-500 sm:w-auto active:bg-lime-100 hover:bg-lime-300 focus:outline-none focus:ring" type="submit" value="Read QR code" />
+          </form>
+          <br />
         </div>
+        
       </div>
     </section>
     <CybornFooter />
@@ -50,4 +45,4 @@ function Home(){
   )
 }
 
-export default Home;
+export default qrRead;
