@@ -71,17 +71,17 @@ export default function Dashboard() {
     <CybornHeader />
       <div className="p-4 bg-background">
         <h2 className="text-6xl text-white py-2">Verified Inventory</h2>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 pt-4">
+        <br />
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 lg:p-16 gap-4 pt-4">
           {
             nfts.map((nft, i) => (
-              <div key={i} className="rounded-xl overflow-hidden w-full">
+              <div key={i} className=" overflow-hidden w-full">
                 <img src={nft.image} className="rounded" />
-                <div className="p-4 bg-black">
+                <div className="p-4 bg-cybornheader">
                 <p style={{ height: '40px' }} className="text-sm text-white font-semibold">Owner: {nft.seller}</p>
-                <p className="text-sm text-white">Brand/Product Name: {nft.name}</p>
-                <p className="text-sm text-white">Brand/Product URL: {nft.description}</p>
-                <p className="text-sm text-white">{nft.image}</p>
-                <br />
+                <p className="text-sm text-white">Brand/Product Name:{nft.name}</p>
+                <p className="text-sm text-white">Brand/Product URL: <Link href={nft.description}>{nft.description}</Link></p>
+                <p className="text-sm text-white">Hash: <Link href={nft.image}>{nft.image}</Link></p>
                 <p className="text-sm text-white">Token Id: {nft.tokenId}</p>
                 </div>
                 <div className="p-4 bg-gradient-to-r from-lime-200 via-lime-400 to-lime-500">
