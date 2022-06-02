@@ -36,8 +36,8 @@ function Home(){
           </p>
 
           <div className="flex flex-wrap gap-4 mt-8 text-center">
-            <button onClick={()=> router.push("/insurance/dashboard")} className="block w-full px-12 py-3 text-sm font-medium text-black rounded shadow bg-gradient-to-r from-lime-200 via-lime-400 to-lime-500 sm:w-auto active:bg-lime-100 hover:bg-lime-300 focus:outline-none focus:ring">
-              Go To Insurance Dashboard
+            <button className="block w-full px-12 py-3 text-sm font-medium text-black rounded shadow bg-gradient-to-r from-lime-200 via-lime-400 to-lime-500 sm:w-auto active:bg-lime-100 hover:bg-lime-300 focus:outline-none focus:ring">
+              Go To Insurance Dashboard (Coming Soon)
             </button>
 
             <button className="block w-full px-12 py-3 text-sm font-medium bg-white rounded shadow text-black sm:w-auto focus:outline-none focus:ring">
