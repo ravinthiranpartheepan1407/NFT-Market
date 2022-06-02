@@ -47,7 +47,7 @@ class CybornCountdown extends Component {
   }
 
   componentDidMount() {
-    this.deadline = new Date("June 2, 2022 00:00:00").getTime();
+    this.deadline = new Date("June 4, 2022 12:00:00").getTime();
 
     this.x = setInterval(this.count, 1000);
   }
@@ -59,7 +59,7 @@ class CybornCountdown extends Component {
     return (
       <div className="min-w-screen min-h-screen flex items-center justify-center px-5 py-5" id="countdown">
     <div className="text-white">
-        <h1 className="text-3xl text-center mb-3 font-extralight">Launching On-Chain Brand Verification*</h1>
+        <h1 className="text-3xl text-center mb-3 font-extralight">Launching On-Chain Health Insurance*</h1>
         <br />
         <div className="text-6xl text-center flex w-full items-center justify-center">
             <div className="text-2xl mr-1 font-extralight">in</div>
