@@ -15,11 +15,11 @@ function Winapk() {
         <div className="relative max-w-screen-xl px-4 py-32 mx-auto lg:h-screen lg:items-center lg:flex">
           <div className="text-center sm:text-left">
             <h1 className="xl:text-5xl md:text-4xl text-2xl font-semibold leading-tight text-center text-white sm:mb-0 mb-12">
-              Wanna get our apps in windows, and android devices?
+              Get our software in windows, and android devices?
             </h1>
 
             <p className="text-center mt-4 lg:text-2xl text-white sm:leading-relaxed sm:text-xl">
-              We have our apps available on Windows, and Android.
+              We have our apps available on Windows, and Android platforms.
             </p>
 
             <br />
